@@ -34,6 +34,12 @@ The defaults are my own preferences.
 --defaultcss-bg-light: #ffffff;
 ```
 
+## Demo
+
+None of the defaults are changed (some extra inline styles/javascript added to page).
+
+<https://lmd-code.github.io/lmdcode-default-css/>
+
 ## To Do
 
 - Add default table styles.
