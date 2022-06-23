@@ -1,0 +1,5 @@
+# Ignore .github generated folders
+.github/
+
+# Igore dev folder
+dev/
