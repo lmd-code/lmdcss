@@ -1,14 +1,15 @@
-# LMD-Code Default CSS
+# Default CSS
 
-An opinionated default stylesheet created for my own projects. Used as a starter rather than an end result.
+A mildly opinionated default stylesheet created for my own projects. This is not a CSS reset/normalise (although some normalisation is applied, particularly for forms) or framework - it's just my preferred starting point rather than an end result.
 
-## How to Use
+## Usage
 
 1. Download the unminified CSS file to your project's CSS assets.
-2. Customise the CSS variables to suit.
+2. Customise the CSS variables to suit ([see customisable variables](#customisable-variables)).
 3. Then either:
-    - Minify and link as separate stylesheet (probably needs to be first in the cascade).
-    - Paste to the top of your own stylesheet.
+    - Link as separate stylesheet (minification recommended).\
+    `<link href="lmdcode-default.css" rel="stylesheet">`
+    - Or, paste to the top of your own stylesheet.
 
 ## Customisable Variables
 
@@ -36,10 +37,6 @@ The defaults are my own preferences.
 
 ## Demo
 
-None of the defaults are changed (some extra inline styles/javascript added to page).
+In the demo none of the defaults have been changed (some extra inline styles have been added).
 
 <https://lmd-code.github.io/lmdcode-default-css/>
-
-## To Do
-
-- Add default table styles.

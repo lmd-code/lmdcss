@@ -3,41 +3,42 @@
  * Author: LMD-Code
  * See: https://github.com/lmd-code/lmdcode-default-css/
  * Copyright: CC0-1.0
- 
- * Version: 1.0
  * 
  * Edit variables or overwrite them in your own CSS file.
  */
  :root {
-	--defaultcss-font-serif: Cambria, Times, "Times New Roman", serif;
-	--defaultcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
-	--defaultcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
-	--defaultcss-font-size: 16px;
-	--defaultcss-font-weight: 400;
-	--defaultcss-margins: 1rem 0;
-	--defaultcss-borders: 1px solid #a0a0a0;
-	--defaultcss-focus-outline: 2px dotted #202020;
-	--defaultcss-button: #d0d0d0;
-	--defaultcss-button-hover: #e0e0e0;
-	--defaultcss-button-active: #b0b0b0;
-	--defaultcss-text-dark: #000000;
-	--defaultcss-text-medium: #606060;
-	--defaultcss-text-light: #ffffff;
-	--defaultcss-bg-dark: #404040;
-	--defaultcss-bg-medium: #e3e3e3;
-	--defaultcss-bg-light: #ffffff;
+	--lmdcode-font-serif: Cambria, Times, "Times New Roman", serif;
+	--lmdcode-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
+	--lmdcode-font-monospace: Consolas, monaco, 'Courier New', monospace;
+	--lmdcode-font-size: 16px;
+	--lmdcode-font-weight: 400;
+	--lmdcode-margins: 1rem 0;
+	--lmdcode-borders: 1px solid #a0a0a0;
+	--lmdcode-focus-outline: 2px dotted #202020;
+	--lmdcode-button: #d0d0d0;
+	--lmdcode-button-hover: #e0e0e0;
+	--lmdcode-button-active: #b0b0b0;
+	--lmdcode-text-dark: #000000;
+	--lmdcode-text-medium: #606060;
+	--lmdcode-text-light: #ffffff;
+	--lmdcode-bg-dark: #404040;
+	--lmdcode-bg-medium: #e3e3e3;
+	--lmdcode-bg-light: #ffffff;
 }
 
-html, *, ::before, ::after {
+html,
+*,
+::before,
+::after {
 	box-sizing: border-box;
 }
 
 html {
 	overflow-wrap: break-word;
 	line-height: 1.625;
-	font-size: var(--defaultcss-font-size);
+	font-size: var(--lmdcode-font-size);
 	font-size-adjust: 0.5;
-	font-weight: var(--defaultcss-font-weight);
+	font-weight: var(--lmdcode-font-weight);
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
@@ -45,9 +46,9 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background: var(--defaultcss-bg-light);
-	color: var(--defaultcss-text-dark);
-	font-family: var(--defaultcss-font-serif);
+	background: var(--lmdcode-bg-light);
+	color: var(--lmdcode-text-dark);
+	font-family: var(--lmdcode-font-serif);
 	font-size: 1rem;
 }
 @media screen and (min-width: 900px) {
@@ -56,22 +57,50 @@ body {
 	}
 }
 
-header, footer, main, article, aside, section {
+header,
+footer,
+main,
+article,
+aside,
+section {
 	display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, address {
-	margin: var(--defaultcss-margins);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address {
+	margin: var(--lmdcode-margins);
 	padding: 0;
 }
 
-p:last-child, ul:last-child, ol:last-child, dl:last-child, blockquote:last-child, pre:last-child, address:last-child {
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child,
+blockquote:last-child,
+pre:last-child,
+address:last-child {
 	margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin-bottom: 1rem;
-	font-family: var(--defaultcss-font-sans-serif);
+	font-family: var(--lmdcode-font-sans-serif);
 	font-weight: 500;
 }
 h1 {
@@ -99,17 +128,26 @@ h6 {
 	line-height: 1.25;
 }
 
-ul, ol {
+ul,
+ol {
 	list-style-position: outside;
 }
 dt {
 	font-weight: 500;
 }
-li, dd {
+li,
+dd {
 	margin: 0 0 0.5rem 2rem;
 }
-li:last-child, dt:last-child, dd:last-child {margin-bottom: 0;}
-li ul, li ol, li dl, dd ul, dd ol, dd dl {
+li:last-child,
+dt:last-child,
+dd:last-child {margin-bottom: 0;}
+li ul,
+li ol,
+li dl,
+dd ul,
+dd ol,
+dd dl {
 	margin: 0;
 }
 
@@ -119,14 +157,32 @@ blockquote {
 }
 blockquote > :last-child {margin-bottom: 0;}
 
+table {
+    margin: var(--lmdcode-margins);
+    border: var(--lmdcode-borders);
+    border-collapse: collapse;
+    padding: 0;
+}
+caption {
+	font-style: normal;
+}
+th,
+td {
+    border: var(--lmdcode-borders);
+    padding: 0.25rem 0.5rem;
+}
+th {
+    font-weight: bold;
+}
+
 pre {
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	border-radius: 0.125rem;
 	padding: 1em;
-	background-color: var(--defaultcss-bg-dark);
-	color: var(--defaultcss-text-light);
-	font-family: var(--defaultcss-font-monospace);
-	font-weight: var(--defaultcss-font-weight);
+	background-color: var(--lmdcode-bg-dark);
+	color: var(--lmdcode-text-light);
+	font-family: var(--lmdcode-font-monospace);
+	font-weight: var(--lmdcode-font-weight);
 	tab-size: 4;
 	line-height: 1.2;
 	overflow-x: auto;
@@ -137,20 +193,27 @@ hr {
 	border: 0;
 	margin: 1.5rem 0;
 	line-height: 0;
-	background-color: var(--defaultcss-bg-dark);
+	background-color: var(--lmdcode-bg-dark);
 }
 
 /** INLINE **/
 
-kbd, samp, var, code, tt {
-	font-family: var(--defaultcss-font-monospace);
+kbd,
+samp,
+var,
+code,
+tt {
+	font-family: var(--lmdcode-font-monospace);
 }
 
-b, strong {
+b,
+strong {
 	font-weight: 600;
 }
 
-i, em, cite {
+i,
+em,
+cite {
 	font-style: italic;
 }
 
@@ -162,7 +225,7 @@ img {
 
 figure {
 	display: block;
-	margin: var(--defaultcss-margins);
+	margin: var(--lmdcode-margins);
 	padding: 0;
 }
 figcaption {
@@ -182,7 +245,7 @@ form {
 
 fieldset {
 	margin: 0 0 1rem 0;
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	border-radius: 0.125rem;
 	padding: 1em;
 }
@@ -194,41 +257,54 @@ legend {
 }
 
 /* <input> / <button> */
-input, button {
+input,
+button {
 	margin: 0;
 	font-family: inherit;
 	font-size: 1em;
-	font-weight: var(--defaultcss-font-weight);
+	font-weight: var(--lmdcode-font-weight);
 	vertical-align: baseline;
 	text-transform: none;
 	overflow: visible;
 }
 
-input:focus, textarea:focus {
-	outline: var(--defaultcss-focus-outline);
+input:focus,
+textarea:focus {
+	outline: var(--lmdcode-focus-outline);
 	outline-offset: -2px;
 }
 
 /* Text inputs */
-[type=date], [type=datetime-local], [type=month], [type=week], [type=time], 
-[type=email], [type=url], [type=tel],
-[type=number], [type=password], [type=search], [type=text] {
-	border: var(--defaultcss-borders);
+[type=date],
+[type=datetime-local],
+[type=month],
+[type=week],
+[type=time],
+[type=email],
+[type=url],
+[type=tel],
+[type=number],
+[type=password],
+[type=search],
+[type=text] {
+	border: var(--lmdcode-borders);
 	border-radius: 0.125rem;
 	padding: 0.25em 0.5em;
 }
-::-webkit-datetime-edit-fields-wrapper, ::-webkit-calendar-picker-indicator {
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-calendar-picker-indicator {
 	/* Make the height of the input the same as other inputs in Chrome/Edge */
 	padding: 0;
 	padding-inline: 0;
 }
 
 /* Checkbox / Radio inputs */
-[type=checkbox], [type=radio] {
+[type=checkbox],
+[type=radio] {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	line-height: 1;
 	vertical-align: middle;
 	cursor: pointer;
@@ -238,12 +314,12 @@ input:focus, textarea:focus {
 [type=color] {
 	width: 1.5em;
 	height: 1.5em;
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	border-radius: 0.125rem;
 	padding-block: 0;
 	padding-inline: 0;
 	padding: 0.125em;
-	background-color: var(--defaultcss-bg-light); 
+	background-color: var(--lmdcode-bg-light); 
 	vertical-align: middle;
 	cursor: pointer;
 }
@@ -255,23 +331,26 @@ input:focus, textarea:focus {
 [type=file] {
 	cursor: pointer;
 }
-::file-selector-button, ::-webkit-file-upload-button {
+::file-selector-button,
+::-webkit-file-upload-button {
 	/* Make the button look like other buttons */
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	border-radius: 0.125rem;
 	padding: 0.25em 0.5em;
-	background-color: var(--defaultcss-button);
-	color: var(--defaultcss-text-dark);
-	font-family: var(--defaultcss-font-sans-serif);
+	background-color: var(--lmdcode-button);
+	color: var(--lmdcode-text-dark);
+	font-family: var(--lmdcode-font-sans-serif);
 	font-size: 1em;
-	font-weight: var(--defaultcss-font-weight);
+	font-weight: var(--lmdcode-font-weight);
 	cursor: pointer;
 }
-::file-selector-button:hover, ::-webkit-file-upload-button:hover {
-	background-color: var(--defaultcss-button-hover);
+::file-selector-button:hover,
+::-webkit-file-upload-button:hover {
+	background-color: var(--lmdcode-button-hover);
 }
-::file-selector-button:active, ::-webkit-file-upload-button:active {
-	background-color: var(--defaultcss-button-active);
+::file-selector-button:active,
+::-webkit-file-upload-button:active {
+	background-color: var(--lmdcode-button-active);
 }
 
 /* Image (Button) */
@@ -292,73 +371,91 @@ input:focus, textarea:focus {
 [type=range] {
 	vertical-align: middle;
 }
-[type=range]:disabled, [type=range]:disabled:active, [type=range]:disabled:hover, [type=range]:disabled:focus {
+[type=range]:disabled,
+[type=range]:disabled:active,
+[type=range]:disabled:hover,
+[type=range]:disabled:focus {
 	background-color: transparent;
 }
 
 /* <button> <input type=button|submit|reset> */
-button, [type=button], [type=submit], [type=reset] {
+button,
+[type=button],
+[type=submit],
+[type=reset] {
 	-webkit-appearance: button;
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	border-radius: 0.25rem;
 	padding: 0.25em 0.5em;
-	background-color: var(--defaultcss-button);
-	color: var(--defaultcss-text-dark);
+	background-color: var(--lmdcode-button);
+	color: var(--lmdcode-text-dark);
 	cursor: pointer;
 	transition: all .2s ease-in-out;
 }
-button:hover, [type=button]:hover, [type=submit]:hover, [type=reset]:hover {
-	background-color: var(--defaultcss-button-hover);
+button:hover,
+[type=button]:hover,
+[type=submit]:hover,
+[type=reset]:hover {
+	background-color: var(--lmdcode-button-hover);
 }
-button:focus, [type=button]:focus, [type=submit]:focus, [type=reset]:focus {
-	background-color: var(--defaultcss-button-hover);
-	outline: var(--defaultcss-focus-outline);
+button:focus,
+[type=button]:focus,
+[type=submit]:focus,
+[type=reset]:focus {
+	background-color: var(--lmdcode-button-hover);
+	outline: var(--lmdcode-focus-outline);
 	outline-offset: -2px;
 }
-button:not(:disabled):active, [type=button]:not(:disabled):active, [type=submit]:not(:disabled):active, [type=reset]:not(:disabled):active {
+button:not(:disabled):active,
+[type=button]:not(:disabled):active,
+[type=submit]:not(:disabled):active,
+[type=reset]:not(:disabled):active {
 	transform: scale(0.95);
-	background-color: var(--defaultcss-button-active);
+	background-color: var(--lmdcode-button-active);
 }
 
 /* <meter> <progress> */
-meter:not(.form-fallback), progress {
-	border: var(--defaultcss-borders);
+meter:not(.form-fallback),
+progress {
+	border: var(--lmdcode-borders);
 }
-::-webkit-progress-bar, ::-webkit-meter-bar {
-	background: var(--defaultcss-bg-light);
+::-webkit-progress-bar,
+::-webkit-meter-bar {
+	background: var(--lmdcode-bg-light);
 }
 ::-webkit-meter-bar {
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 }
 ::-webkit-progress-value {
-	background-color: var(--defaultcss-button-active);
+	background-color: var(--lmdcode-button-active);
 }
 
 /* <textarea> */
 textarea {
 	max-width: 100%;
 	margin: 0;
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	border-radius: 0.125rem;
 	padding: 0.25em 0.5em;
 	font-family: inherit;
 	font-size: 1em;
-	font-weight: var(--defaultcss-font-weight);
+	font-weight: var(--lmdcode-font-weight);
 	resize: vertical;
 }
 
 /* <select> */
 select {
 	margin: 0;
-	border: var(--defaultcss-borders);
+	border: var(--lmdcode-borders);
 	padding-block: 0;
 	font-family: inherit;
 	font-size: 1em;
-	font-weight: var(--defaultcss-font-weight);
-	background: var(--defaultcss-bg-light);
+	font-weight: var(--lmdcode-font-weight);
+	background: var(--lmdcode-bg-light);
 }
-select:focus-visible, select:focus-within {
-	outline: var(--defaultcss-focus-outline);
+select:focus-visible,
+select:focus-within {
+	outline: var(--lmdcode-focus-outline);
 	outline-offset: -2px;
 }
 select:not([multiple]) {
@@ -370,9 +467,10 @@ option {
 }
 option:disabled {
 	font-style: italic;
-	color: var(--defaultcss-text-medium);
+	color: var(--lmdcode-text-medium);
 }
-select > option, datalist > option {
+select > option,
+datalist > option {
 	padding: 0.25em 0.5em;
 }
 optgroup[label] {
@@ -390,10 +488,13 @@ optgroup > option {
 	font-style: normal;
 }
 
-:disabled, :disabled:active, :disabled:hover, :disabled:focus {
+:disabled,
+:disabled:active,
+:disabled:hover,
+:disabled:focus {
 	outline: none;
-	background-color: var(--defaultcss-bg-medium);
-	color: var(--defaultcss-text-medium);
+	background-color: var(--lmdcode-bg-medium);
+	color: var(--lmdcode-text-medium);
 	font-style: italic;
 	opacity: 0.8;
 	cursor: not-allowed;
