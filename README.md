@@ -1,6 +1,6 @@
-# Default CSS
+# MOD CSS
 
-A mildly opinionated default stylesheet created for my own projects. This is not a CSS reset/normalise (although some normalisation is applied, particularly for forms) or framework - it's just my preferred starting point rather than an end result.
+A *Mildly Opinionated Default Cascading Stylesheet* created for my own projects. This is not a CSS reset/normalise (although some normalisation is applied, particularly for forms) or framework - it's just my preferred starting point rather than an end result.
 
 ## Usage
 
@@ -8,7 +8,7 @@ A mildly opinionated default stylesheet created for my own projects. This is not
 2. Customise the CSS variables to suit ([see customisable variables](#customisable-variables)).
 3. Then either:
     - Link as separate stylesheet (minification recommended).\
-    `<link href="lmdcode-default.css" rel="stylesheet">`
+    `<link href="modcss.css" rel="stylesheet">`
     - Or, paste to the top of your own stylesheet.
 
 ## Customisable Variables
