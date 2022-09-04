@@ -16,27 +16,27 @@ A *Mildly Opinionated Default Cascading Stylesheet* created for my own projects.
 The defaults are my own preferences.
 
 ```css
---lmdcode-font-serif: Cambria, Times, "Times New Roman", serif;
---lmdcode-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
---lmdcode-font-monospace: Consolas, monaco, 'Courier New', monospace;
---lmdcode-font-size: 16px;
---lmdcode-font-weight: 400;
---lmdcode-margins: 1rem 0;
---lmdcode-borders: 1px solid #a0a0a0;
---lmdcode-focus-outline: 2px dotted #202020;
---lmdcode-button: #d0d0d0;
---lmdcode-button-hover: #e0e0e0;
---lmdcode-button-active: #b0b0b0;
---lmdcode-text-dark: #000000;
---lmdcode-text-medium: #606060;
---lmdcode-text-light: #ffffff;
---lmdcode-bg-dark: #404040;
---lmdcode-bg-medium: #e3e3e3;
---lmdcode-bg-light: #ffffff;
+--modcss-font-serif: Cambria, Times, "Times New Roman", serif;
+--modcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
+--modcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
+--modcss-font-size: 16px;
+--modcss-font-weight: 400;
+--modcss-margins: 1rem 0;
+--modcss-borders: 1px solid #a0a0a0;
+--modcss-focus-outline: 2px dotted #202020;
+--modcss-button: #d0d0d0;
+--modcss-button-hover: #e0e0e0;
+--modcss-button-active: #b0b0b0;
+--modcss-text-dark: #000000;
+--modcss-text-medium: #606060;
+--modcss-text-light: #ffffff;
+--modcss-bg-dark: #404040;
+--modcss-bg-medium: #e3e3e3;
+--modcss-bg-light: #ffffff;
 ```
 
 ## Demo
 
 In the demo none of the defaults have been changed (some extra inline styles have been added).
 
-<https://lmd-code.github.io/lmdcode-default-css/>
+<https://lmd-code.github.io/modcss/>
