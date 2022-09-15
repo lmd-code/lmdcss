@@ -1,29 +1,29 @@
 /**
- * MOD CSS
+ * LMD CSS
  * Author: LMD-Code
- * See: https://github.com/lmd-code/modcss/
+ * See: https://github.com/lmd-code/lmdcss/
  * Copyright: CC0-1.0
  * 
  * Edit variables or overwrite them in your own CSS file.
  */
  :root {
-	--modcss-font-serif: Cambria, Times, "Times New Roman", serif;
-	--modcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
-	--modcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
-	--modcss-font-size: 16px;
-	--modcss-font-weight: 400;
-	--modcss-margins: 1rem 0;
-	--modcss-borders: 1px solid #a0a0a0;
-	--modcss-focus-outline: 2px dotted #202020;
-	--modcss-button: #d0d0d0;
-	--modcss-button-hover: #e0e0e0;
-	--modcss-button-active: #b0b0b0;
-	--modcss-text-dark: #000000;
-	--modcss-text-medium: #606060;
-	--modcss-text-light: #ffffff;
-	--modcss-bg-dark: #404040;
-	--modcss-bg-medium: #e3e3e3;
-	--modcss-bg-light: #ffffff;
+	--lmdcss-font-serif: Cambria, Times, "Times New Roman", serif;
+	--lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
+	--lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
+	--lmdcss-font-size: 16px;
+	--lmdcss-font-weight: 400;
+	--lmdcss-margins: 1rem 0;
+	--lmdcss-borders: 1px solid #a0a0a0;
+	--lmdcss-focus-outline: 2px dotted #202020;
+	--lmdcss-button: #d0d0d0;
+	--lmdcss-button-hover: #e0e0e0;
+	--lmdcss-button-active: #b0b0b0;
+	--lmdcss-text-dark: #000000;
+	--lmdcss-text-medium: #606060;
+	--lmdcss-text-light: #ffffff;
+	--lmdcss-bg-dark: #404040;
+	--lmdcss-bg-medium: #e3e3e3;
+	--lmdcss-bg-light: #ffffff;
 }
 
 html,
@@ -36,9 +36,9 @@ html,
 html {
 	overflow-wrap: break-word;
 	line-height: 1.625;
-	font-size: var(--modcss-font-size);
+	font-size: var(--lmdcss-font-size);
 	font-size-adjust: 0.5;
-	font-weight: var(--modcss-font-weight);
+	font-weight: var(--lmdcss-font-weight);
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
 	text-size-adjust: none;
@@ -46,9 +46,9 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background: var(--modcss-bg-light);
-	color: var(--modcss-text-dark);
-	font-family: var(--modcss-font-serif);
+	background: var(--lmdcss-bg-light);
+	color: var(--lmdcss-text-dark);
+	font-family: var(--lmdcss-font-serif);
 	font-size: 1rem;
 }
 @media screen and (min-width: 900px) {
@@ -79,7 +79,7 @@ dl,
 blockquote,
 pre,
 address {
-	margin: var(--modcss-margins);
+	margin: var(--lmdcss-margins);
 	padding: 0;
 }
 
@@ -100,7 +100,7 @@ h4,
 h5,
 h6 {
 	margin-bottom: 1rem;
-	font-family: var(--modcss-font-sans-serif);
+	font-family: var(--lmdcss-font-sans-serif);
 	font-weight: 500;
 }
 h1 {
@@ -158,8 +158,8 @@ blockquote {
 blockquote > :last-child {margin-bottom: 0;}
 
 table {
-    margin: var(--modcss-margins);
-    border: var(--modcss-borders);
+    margin: var(--lmdcss-margins);
+    border: var(--lmdcss-borders);
     border-collapse: collapse;
     padding: 0;
 }
@@ -168,7 +168,7 @@ caption {
 }
 th,
 td {
-    border: var(--modcss-borders);
+    border: var(--lmdcss-borders);
     padding: 0.25rem 0.5rem;
 }
 th {
@@ -176,13 +176,13 @@ th {
 }
 
 pre {
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	border-radius: 0.125rem;
 	padding: 1em;
-	background-color: var(--modcss-bg-dark);
-	color: var(--modcss-text-light);
-	font-family: var(--modcss-font-monospace);
-	font-weight: var(--modcss-font-weight);
+	background-color: var(--lmdcss-bg-dark);
+	color: var(--lmdcss-text-light);
+	font-family: var(--lmdcss-font-monospace);
+	font-weight: var(--lmdcss-font-weight);
 	tab-size: 4;
 	line-height: 1.2;
 	overflow-x: auto;
@@ -193,7 +193,7 @@ hr {
 	border: 0;
 	margin: 1.5rem 0;
 	line-height: 0;
-	background-color: var(--modcss-bg-dark);
+	background-color: var(--lmdcss-bg-dark);
 }
 
 /** INLINE **/
@@ -203,7 +203,7 @@ samp,
 var,
 code,
 tt {
-	font-family: var(--modcss-font-monospace);
+	font-family: var(--lmdcss-font-monospace);
 }
 
 b,
@@ -225,7 +225,7 @@ img {
 
 figure {
 	display: block;
-	margin: var(--modcss-margins);
+	margin: var(--lmdcss-margins);
 	padding: 0;
 }
 figcaption {
@@ -245,7 +245,7 @@ form {
 
 fieldset {
 	margin: 0 0 1rem 0;
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	border-radius: 0.125rem;
 	padding: 1em;
 }
@@ -262,7 +262,7 @@ button {
 	margin: 0;
 	font-family: inherit;
 	font-size: 1em;
-	font-weight: var(--modcss-font-weight);
+	font-weight: var(--lmdcss-font-weight);
 	vertical-align: baseline;
 	text-transform: none;
 	overflow: visible;
@@ -270,7 +270,7 @@ button {
 
 input:focus,
 textarea:focus {
-	outline: var(--modcss-focus-outline);
+	outline: var(--lmdcss-focus-outline);
 	outline-offset: -2px;
 }
 
@@ -287,7 +287,7 @@ textarea:focus {
 [type=password],
 [type=search],
 [type=text] {
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	border-radius: 0.125rem;
 	padding: 0.25em 0.5em;
 }
@@ -304,7 +304,7 @@ textarea:focus {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	line-height: 1;
 	vertical-align: middle;
 	cursor: pointer;
@@ -314,12 +314,12 @@ textarea:focus {
 [type=color] {
 	width: 1.5em;
 	height: 1.5em;
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	border-radius: 0.125rem;
 	padding-block: 0;
 	padding-inline: 0;
 	padding: 0.125em;
-	background-color: var(--modcss-bg-light); 
+	background-color: var(--lmdcss-bg-light); 
 	vertical-align: middle;
 	cursor: pointer;
 }
@@ -334,23 +334,23 @@ textarea:focus {
 ::file-selector-button,
 ::-webkit-file-upload-button {
 	/* Make the button look like other buttons */
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	border-radius: 0.125rem;
 	padding: 0.25em 0.5em;
-	background-color: var(--modcss-button);
-	color: var(--modcss-text-dark);
-	font-family: var(--modcss-font-sans-serif);
+	background-color: var(--lmdcss-button);
+	color: var(--lmdcss-text-dark);
+	font-family: var(--lmdcss-font-sans-serif);
 	font-size: 1em;
-	font-weight: var(--modcss-font-weight);
+	font-weight: var(--lmdcss-font-weight);
 	cursor: pointer;
 }
 ::file-selector-button:hover,
 ::-webkit-file-upload-button:hover {
-	background-color: var(--modcss-button-hover);
+	background-color: var(--lmdcss-button-hover);
 }
 ::file-selector-button:active,
 ::-webkit-file-upload-button:active {
-	background-color: var(--modcss-button-active);
+	background-color: var(--lmdcss-button-active);
 }
 
 /* Image (Button) */
@@ -384,11 +384,11 @@ button,
 [type=submit],
 [type=reset] {
 	-webkit-appearance: button;
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	border-radius: 0.25rem;
 	padding: 0.25em 0.5em;
-	background-color: var(--modcss-button);
-	color: var(--modcss-text-dark);
+	background-color: var(--lmdcss-button);
+	color: var(--lmdcss-text-dark);
 	cursor: pointer;
 	transition: all .2s ease-in-out;
 }
@@ -396,14 +396,14 @@ button:hover,
 [type=button]:hover,
 [type=submit]:hover,
 [type=reset]:hover {
-	background-color: var(--modcss-button-hover);
+	background-color: var(--lmdcss-button-hover);
 }
 button:focus,
 [type=button]:focus,
 [type=submit]:focus,
 [type=reset]:focus {
-	background-color: var(--modcss-button-hover);
-	outline: var(--modcss-focus-outline);
+	background-color: var(--lmdcss-button-hover);
+	outline: var(--lmdcss-focus-outline);
 	outline-offset: -2px;
 }
 button:not(:disabled):active,
@@ -411,51 +411,51 @@ button:not(:disabled):active,
 [type=submit]:not(:disabled):active,
 [type=reset]:not(:disabled):active {
 	transform: scale(0.95);
-	background-color: var(--modcss-button-active);
+	background-color: var(--lmdcss-button-active);
 }
 
 /* <meter> <progress> */
 meter:not(.form-fallback),
 progress {
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 }
 ::-webkit-progress-bar,
 ::-webkit-meter-bar {
-	background: var(--modcss-bg-light);
+	background: var(--lmdcss-bg-light);
 }
 ::-webkit-meter-bar {
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 }
 ::-webkit-progress-value {
-	background-color: var(--modcss-button-active);
+	background-color: var(--lmdcss-button-active);
 }
 
 /* <textarea> */
 textarea {
 	max-width: 100%;
 	margin: 0;
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	border-radius: 0.125rem;
 	padding: 0.25em 0.5em;
 	font-family: inherit;
 	font-size: 1em;
-	font-weight: var(--modcss-font-weight);
+	font-weight: var(--lmdcss-font-weight);
 	resize: vertical;
 }
 
 /* <select> */
 select {
 	margin: 0;
-	border: var(--modcss-borders);
+	border: var(--lmdcss-borders);
 	padding-block: 0;
 	font-family: inherit;
 	font-size: 1em;
-	font-weight: var(--modcss-font-weight);
-	background: var(--modcss-bg-light);
+	font-weight: var(--lmdcss-font-weight);
+	background: var(--lmdcss-bg-light);
 }
 select:focus-visible,
 select:focus-within {
-	outline: var(--modcss-focus-outline);
+	outline: var(--lmdcss-focus-outline);
 	outline-offset: -2px;
 }
 select:not([multiple]) {
@@ -467,7 +467,7 @@ option {
 }
 option:disabled {
 	font-style: italic;
-	color: var(--modcss-text-medium);
+	color: var(--lmdcss-text-medium);
 }
 select > option,
 datalist > option {
@@ -493,8 +493,8 @@ optgroup > option {
 :disabled:hover,
 :disabled:focus {
 	outline: none;
-	background-color: var(--modcss-bg-medium);
-	color: var(--modcss-text-medium);
+	background-color: var(--lmdcss-bg-medium);
+	color: var(--lmdcss-text-medium);
 	font-style: italic;
 	opacity: 0.8;
 	cursor: not-allowed;
