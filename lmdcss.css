@@ -236,6 +236,16 @@ figure image {
 	display: block;
 }
 
+/** IFRAMES/EMBEDS/OBJECTS */
+
+embed, iframe, object {
+	display: block;
+	width: 100%;
+	margin: var(--lmdcss-margins);
+	border: none;
+	padding: 0;
+}
+
 /** FORMS **/
 
 form {
