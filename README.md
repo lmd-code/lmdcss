@@ -4,12 +4,14 @@ A *mildly opinionated* default CSS file created for my own projects. This is not
 
 ## Usage
 
-1. Download the unminified CSS file to your project's CSS assets.
-2. Customise the CSS variables to suit ([see customisable variables](#customisable-variables)).
-3. Then either:
-    - Link as separate stylesheet (minification recommended).\
-    `<link href="lmdcss.css" rel="stylesheet">`
-    - Or, paste to the top of your own stylesheet.
+1. Download the latest release and unpack it to your project's CSS assets.
+2. Then either:
+    - Link to the minified version:\
+    `<link href="lmdcss.min.css" rel="stylesheet">`
+    - Or, using the unminified version, customise the CSS variables to suit ([see customisable variables](#customisable-variables)) before:
+        - Minifying it and using as above.
+        - Using the unminified version directly.
+        - Pasting it to the top of your own stylesheet.
 
 ## Customisable Variables
 
