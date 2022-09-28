@@ -3,3 +3,4 @@
 
 # Igore dev folder
 dev/
+*.min.css
