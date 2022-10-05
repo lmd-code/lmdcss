@@ -32,7 +32,7 @@ html,
 ::before,
 ::after {
 	box-sizing: border-box;
-	min-width: 0; /* fix flexbox min-width: auto bug */
+	min-width: 0; /* fix flexbox 'min-width: auto' and <pre> tag overflow bug */
 }
 
 html {
