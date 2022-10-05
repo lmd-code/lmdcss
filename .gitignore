@@ -3,4 +3,6 @@
 
 # Igore dev folder
 dev/
+
+# Ignore minified file
 *.min.css
