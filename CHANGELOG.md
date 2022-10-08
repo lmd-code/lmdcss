@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
 
 - Modified `pre` tag styling to plain `<pre>` and `<pre><code>` versions.
+- Modified `img` tag to have basic responsiveness.
 
 ## [1.1.2] - 2022-10-08
 
