@@ -178,16 +178,40 @@ th {
 }
 
 pre {
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem;
-	padding: 1em;
-	background-color: var(--lmdcss-bg-dark);
-	color: var(--lmdcss-text-light);
+	position: relative;
+	margin: var(--lmdcss-margins);
 	font-family: var(--lmdcss-font-monospace);
 	font-weight: var(--lmdcss-font-weight);
 	tab-size: 4;
 	line-height: 1.2;
 	overflow-x: auto;
+}
+
+pre > code {
+	display: block;
+	border: var(--lmdcss-borders);
+	border-radius: 0.125rem;
+	padding: 2rem 1rem 1rem 1rem;
+	background-color: var(--lmdcss-bg-dark);
+	color: var(--lmdcss-text-light);
+	overflow-x: auto;
+}
+
+pre > code[title]::before {
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	border: var(--lmdcss-borders);
+	border-radius: 0.125rem 0.125rem 0 0;
+	padding: 0.25em 0.5em;
+	background-color: var(--lmdcss-bg-medium);
+	color: var(--lmdcss-text-dark);
+	font-size: 0.75em;
+	line-height: 1;
+	text-transform: uppercase;
 }
 
 hr {
@@ -225,6 +249,16 @@ img {
 	border: none;
 }
 
+picture,
+audio,
+video,
+canvas {
+    display: block;
+	margin: var(--lmdcss-margins);
+	border: none;
+	padding: 0;
+}
+
 figure {
 	display: block;
 	margin: var(--lmdcss-margins);
@@ -236,6 +270,13 @@ figcaption {
 }
 figure img {
 	display: block;
+}
+
+figure > picture,
+figure > audio,
+figure > video,
+figure > canvas {
+    margin: 0;
 }
 
 /** IFRAMES/EMBEDS/OBJECTS */
