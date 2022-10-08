@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.1.2] - 2022-10-08
+
+### Fixed
+
+- Typo in `figure img` style declaration.
+
 ## [1.1.1] - 2022-10-05
 
 ### Fixed
@@ -58,6 +64,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - First public release.
 
-[Unreleased]: https://github.com/lmd-code/lmdcss/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/lmd-code/lmdcss/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.2
 [1.1.1]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.1
 [1.1.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.0
