@@ -3,7 +3,7 @@
  * Author: LMD-Code
  * See: https://github.com/lmd-code/lmdcss/
  * Copyright: CC0-1.0
- * Version: 1.1.2
+ * Version: 1.2.0
  * 
  * Edit variables or overwrite them in your own CSS file.
  */
@@ -25,6 +25,8 @@
 	--lmdcss-bg-dark: #404040;
 	--lmdcss-bg-medium: #e3e3e3;
 	--lmdcss-bg-light: #ffffff;
+	--lmdcss-mark-bg: #ffff44;
+    --lmdcss-mark-text: #000;
 }
 
 html,
@@ -78,7 +80,6 @@ p,
 ul,
 ol,
 dl,
-blockquote,
 pre,
 address {
 	margin: var(--lmdcss-margins);
@@ -89,7 +90,6 @@ p:last-child,
 ul:last-child,
 ol:last-child,
 dl:last-child,
-blockquote:last-child,
 pre:last-child,
 address:last-child {
 	margin-bottom: 0;
@@ -153,10 +153,14 @@ dd dl {
 	margin: 0;
 }
 
-blockquote {
+blockquote,
+figure > blockquote ~ figcaption {
+	margin: var(--lmdcss-margins);
 	margin-left: 3rem;
 	margin-right: 3rem;
+	padding: 0;
 }
+blockquote > :first-child {margin-top: 0;}
 blockquote > :last-child {margin-bottom: 0;}
 
 table {
@@ -243,6 +247,37 @@ cite {
 	font-style: italic;
 }
 
+small {
+    font-size: 0.75em;
+}
+
+mark {
+    background-color: var(--lmdcss-mark-bg);
+    color: var(--lmdcss-mark-text);
+}
+
+del {
+    text-decoration-line: line-through;
+    text-decoration-style: double;
+}
+
+ins {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+sup,
+sub {
+    position: relative;
+    top: -0.4em;
+    line-height: 0;
+    font-size: 0.75em;
+    vertical-align: baseline;
+}
+sub { 
+    top: 0.4em; 
+}
+
 /** IMAGES **/
 
 img {
@@ -281,6 +316,18 @@ figure > audio,
 figure > video,
 figure > canvas {
     margin: 0;
+}
+
+/**
+ * The DETAILS element is ignored by older IE browsers, so we don't want to mess with it in those.
+ * Also block elements (e.g. headings) are not allowed inside SUMMARY  and forcing it has poor 
+ * accessibility, so we are not using the 'summary > * {display:inline}' technique.
+ */
+ @supports not (-ms-ime-align: auto) {
+    details {margin: var(--lmdcss-margins);}
+    details > summary {cursor: default; /* arrow instead of text-select */}
+    details > :nth-child(2) {margin-top: 0; /* first element after summary */}
+    details > :last-child {margin-bottom: 0;}
 }
 
 /** IFRAMES/EMBEDS/OBJECTS */
@@ -365,7 +412,7 @@ textarea:focus {
 	border: var(--lmdcss-borders);
 	line-height: 1;
 	vertical-align: middle;
-	cursor: pointer;
+	cursor: default;
 }
 
 /* Color picker */
@@ -379,7 +426,7 @@ textarea:focus {
 	padding: 0.125em;
 	background-color: var(--lmdcss-bg-light); 
 	vertical-align: middle;
-	cursor: pointer;
+	cursor: default;
 }
 ::-webkit-color-swatch-wrapper {
 	padding: 0; /* Decrease inner padding in Chrome/Edge */
@@ -387,7 +434,7 @@ textarea:focus {
 
 /* File Selector */
 [type=file] {
-	cursor: pointer;
+	cursor: default;
 }
 ::file-selector-button,
 ::-webkit-file-upload-button {
@@ -400,7 +447,7 @@ textarea:focus {
 	font-family: var(--lmdcss-font-sans-serif);
 	font-size: 1em;
 	font-weight: var(--lmdcss-font-weight);
-	cursor: pointer;
+	cursor: default;
 }
 ::file-selector-button:hover,
 ::-webkit-file-upload-button:hover {
@@ -447,7 +494,7 @@ button,
 	padding: 0.25em 0.5em;
 	background-color: var(--lmdcss-button);
 	color: var(--lmdcss-text-dark);
-	cursor: pointer;
+	cursor: default;
 	transition: all .2s ease-in-out;
 }
 button:hover,

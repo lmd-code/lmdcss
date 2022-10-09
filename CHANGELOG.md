@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.2.0] - 2022-10-09
+
 ### Fixed
 
 - Removed top margin from first element after `legend` (`:nth-child(2)`) inside a `fieldset`.
@@ -13,11 +15,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Added
 
 - Added basic `picture`, `audio`, `video`, and `canvas` styles.
+- Added default `small`, `del`, `ins`, `sup`/`sub` styles.
+- Added `mark` style with vars for highlight and text colour.
+- Added `details` styles for newer browsers only.
+- Added styles for `blockquote` inside `figure` with citation in `figcaption`.
 
 ### Changed
 
 - Modified `pre` tag styling to plain `<pre>` and `<pre><code>` versions.
 - Modified `img` tag to have basic responsiveness.
+- Changed cursor type for various form elements (now uses 'default').
+- Created new demo page.
 
 ## [1.1.2] - 2022-10-08
 
@@ -77,7 +85,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - First public release.
 
-[Unreleased]: https://github.com/lmd-code/lmdcss/compare/v1.1.2...HEAD
+[Unreleased]: https://github.com/lmd-code/lmdcss/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.2.0
 [1.1.2]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.2
 [1.1.1]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.1
 [1.1.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.0

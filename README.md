@@ -35,6 +35,8 @@ The defaults are my own preferences.
 --lmdcss-bg-dark: #404040;
 --lmdcss-bg-medium: #e3e3e3;
 --lmdcss-bg-light: #ffffff;
+--lmdcss-mark-bg: #ffff44;
+--lmdcss-mark-text: #000;
 ```
 
 ## Demo
