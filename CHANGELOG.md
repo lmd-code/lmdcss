@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Fixed
+
+- Removed top margin from first element after `legend` (`:nth-child(2)`) inside a `fieldset`.
+
 ### Added
 
 - Added basic `picture`, `audio`, `video`, and `canvas` styles.
