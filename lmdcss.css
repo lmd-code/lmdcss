@@ -3,7 +3,7 @@
  * Author: LMD-Code
  * See: https://github.com/lmd-code/lmdcss/
  * Copyright: CC0-1.0
- * Version: 1.2.0
+ * Version: 1.2.1
  * 
  * Edit variables or overwrite them in your own CSS file.
  */
@@ -318,12 +318,16 @@ figure > canvas {
     margin: 0;
 }
 
+svg {
+    overflow: hidden;
+}
+
 /**
  * The DETAILS element is ignored by older IE browsers, so we don't want to mess with it in those.
  * Also block elements (e.g. headings) are not allowed inside SUMMARY  and forcing it has poor 
  * accessibility, so we are not using the 'summary > * {display:inline}' technique.
  */
- @supports not (-ms-ime-align: auto) {
+@supports not (-ms-ime-align: auto) {
     details {margin: var(--lmdcss-margins);}
     details > summary {cursor: default; /* arrow instead of text-select */}
     details > :nth-child(2) {margin-top: 0; /* first element after summary */}
@@ -520,7 +524,7 @@ button:not(:disabled):active,
 }
 
 /* <meter> <progress> */
-meter:not(.form-fallback),
+meter,
 progress {
 	border: var(--lmdcss-borders);
 }
