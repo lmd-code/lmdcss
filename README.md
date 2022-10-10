@@ -36,11 +36,11 @@ The defaults are my own preferences.
 --lmdcss-bg-medium: #e3e3e3;
 --lmdcss-bg-light: #ffffff;
 --lmdcss-mark-bg: #ffff44;
---lmdcss-mark-text: #000;
+--lmdcss-mark-text: #000000;
 ```
 
 ## Demo
 
-In the demo none of the defaults have been changed (some extra inline styles have been added).
+In the demo none of the defaults have been changed (styles have been added for layout/presentation).
 
 <https://lmd-code.github.io/lmdcss/>
