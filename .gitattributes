@@ -3,13 +3,17 @@
 .gitattributes export-ignore
 .gitignore     export-ignore
 .gitkeep       export-ignore
-docs          export-ignore
+.nojekyll      export-ignore
+index.html     export-ignore
+docs           export-ignore
 
 # Exclude from diffs
 CHANGELOG.md linguist-generated
-*.min.css linguist-generated
-docs/* linguist-generated
+*.min.css    linguist-generated
+*.html       linguist-generated
+docs/*       linguist-generated
 
 # Exclude from stats
-*.md linguist-vendored
+*.md   linguist-vendored
+*.html linguist-vendored
 docs/* linguist-vendored
