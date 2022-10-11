@@ -43,4 +43,4 @@ The defaults are my own preferences.
 
 In the demo none of the defaults have been changed (styles have been added for layout/presentation).
 
-<https://lmd-code.github.io/lmdcss/>
+<https://lmd-code.github.io/lmdcss/docs/>

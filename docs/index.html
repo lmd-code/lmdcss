@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>LMD CSS Demo</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript">
-		// DOM Ready Function from https://gist.github.com/dciccale/4087856
-		var DOMReady=function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
-	</script>
-	<link href="lmdcss.min.css" rel="stylesheet">
-	<link href="demo.min.css" rel="stylesheet">
+    <title>LMD CSS Demo</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // DOM Ready Function from https://gist.github.com/dciccale/4087856
+        var DOMReady=function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+    </script>
+    <link href="/lmdcss/lmdcss.min.css" rel="stylesheet">
+    <link href="/lmdcss/docs/demo.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="demo">
 <div id="grid">
 <header id="header">
-	<h1>LMD CSS Demo</h1>
-	<a href="https://github.com/lmd-code/lmdcss">
-		<div id="gh">
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-			<span>Get from GitHub</span>
-		</div>
-	</a>
+    <h1>LMD CSS Demo</h1>
+    <a href="https://github.com/lmd-code/lmdcss">
+        <div id="gh">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>Get from GitHub</span>
+        </div>
+    </a>
 </header>
 
 <nav id="nav">
@@ -33,26 +33,19 @@
 <li><a href="#text__blockquotes">Blockquotes</a></li>
 <li><a href="#text__lists">Lists</a></li>
 <li><a href="#text__details_summary">Details/Summary</a></li>
-<li><a href="#text__address">Address</a></li>
-<li><a href="#text__horizontal_rules">Horizontal rules</a></li>
-<li><a href="#text__tabular_data">Tabular data</a></li>
+<li><a href="#text__tables">Tables</a></li>
 <li><a href="#text__code">Code</a></li>
-<li><a href="#text__inline_elements">Inline elements</a></li>
+<li><a href="#text__inline_other_text">Inline/Other Text</a></li>
 </ul>
 </li>
 <li>
 <a href="#embeds">Embeds</a>
 <ul>
 <li><a href="#embeds__images">Images</a></li>
-<li><a href="#embeds__audio">Audio</a></li>
-<li><a href="#embeds__video">Video</a></li>
-<li><a href="#embeds__canvas">Canvas</a></li>
-<li><a href="#embeds__meter">Meter</a></li>
-<li><a href="#embeds__progress">Progress</a></li>
-<li><a href="#embeds__inline_svg">Inline SVG</a></li>
-<li><a href="#embeds__iframe">IFrame</a></li>
-<li><a href="#embeds__embed">Embed</a></li>
-<li><a href="#embeds__object">Object</a></li>
+<li><a href="#embeds__audio_video">Audio/Video</a></li>
+<li><a href="#embeds__canvas_svg">Canvas/SVG</a></li>
+<li><a href="#embeds__meter_progress">Meter/Progress</a></li>
+<li><a href="#embeds__iframe_embed_object">IFrame/Embed/Object</a></li>
 </ul>
 </li>
 <li>
@@ -62,7 +55,7 @@
 <li><a href="#forms__selects_datalist">Selects/Datalist</a></li>
 <li><a href="#forms__checkboxes_radios">Checkboxes/Radios</a></li>
 <li><a href="#forms__date_time">Date/Time</a></li>
-<li><a href="#forms__other">Other</a></li>
+<li><a href="#forms__other_inputs">Other Inputs</a></li>
 <li><a href="#forms__buttons">Buttons</a></li>
 </ul>
 </li>
@@ -231,39 +224,9 @@
 </div>
 </article>
 
-<article id="text__address" class="example">
+<article id="text__tables" class="example">
 <div class="example--header">
-<h3 class="example--heading">Address</h3>
-<div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
-</div>
-<div class="example--body">
-<address>
-Written by <a href="mailto:webmaster@example.com">Joe Bloggs</a>.<br>
-Visit us at:<br>
-Example.com<br>
-Box 564, Disneyland<br>
-USA
-</address>
-</div>
-</article>
-
-<article id="text__horizontal_rules" class="example">
-<div class="example--header">
-<h3 class="example--heading">Horizontal rules</h3>
-<div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
-</div>
-<div class="example--body">
-<p>There is nothing special about this.</p>
-
-<hr>
-
-<p>It's just a single line.</p>
-</div>
-</article>
-
-<article id="text__tabular_data" class="example">
-<div class="example--header">
-<h3 class="example--heading">Tabular data</h3>
+<h3 class="example--heading">Tables</h3>
 <div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
 </div>
 <div class="example--body">
@@ -292,43 +255,43 @@ USA
 </table>
 
 <table>
-<caption>Table with caption and thead/tfoot</caption>
-<thead>
-  <tr>
-    <th>Table Heading 1</th>
-    <th>Table Heading 2</th>
-    <th>Table Heading 3</th>
-  </tr>
-</thead>
-<tfoot>
-  <tr>
-    <th>Table Footer 1</th>
-    <th>Table Footer 2</th>
-    <th>Table Footer 3</th>
-  </tr>
-</tfoot>
-<tbody>
-  <tr>
-    <td>Table Cell 1</td>
-    <td>Table Cell 2</td>
-    <td>Table Cell 3</td>
-  </tr>
-  <tr>
-    <td>Table Cell 1</td>
-    <td>Table Cell 2</td>
-    <td>Table Cell 3</td>
-  </tr>
-  <tr>
-    <td>Table Cell 1</td>
-    <td>Table Cell 2</td>
-    <td>Table Cell 3</td>
-  </tr>
-  <tr>
-    <td>Table Cell 1</td>
-    <td>Table Cell 2</td>
-    <td>Table Cell 3</td>
-  </tr>
-</tbody>
+    <caption>Table with caption and thead/tfoot</caption>
+    <thead>
+        <tr>
+            <th>Table Heading 1</th>
+            <th>Table Heading 2</th>
+            <th>Table Heading 3</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Table Footer 1</th>
+            <th>Table Footer 2</th>
+            <th>Table Footer 3</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+    </tbody>
 </table>
 </div>
 </article>
@@ -340,13 +303,15 @@ USA
 </div>
 <div class="example--body">
 <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
+
 <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+
 <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
 
 <h4 class="example--subheading">Pre-formatted text</h4>
 
 <pre>
-P R E F O R M A T T E D T E X T
+P R E F O R M A T T E D    T E X T
     ! " # $ % &amp; ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
     @ A B C D E F G H I J K L M N O
@@ -376,26 +341,59 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 </div>
 </article>
 
-<article id="text__inline_elements" class="example">
+<article id="text__inline_other_text" class="example">
 <div class="example--header">
-<h3 class="example--heading">Inline elements</h3>
+<h3 class="example--heading">Inline/Other Text</h3>
 <div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
 </div>
 <div class="example--body">
-<p>Links: <a href="/lmdcss/">Visited</a> and <a href="#nopage">Unvisited</a>.</p>
+<h4 class="example--subheading">Inline Elements</h4>
+
+<p>Links: <a href="/lmdcss/docs">Visited</a> and <a href="#nopage">Unvisited</a>.</p>
+
 <p><strong>Strong is used to indicate strong importance.</strong>, whereas the <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+
 <p><em>This text has added emphasis.</em>, while the <i>i element</i> is text that is offset from the normal text.</p>
+
 <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+
 <p><s>This text has a strikethrough</s>.</p>
+
 <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+
 <p>Superscript<sup>&reg;</sup> and subscript for things like H<sub>2</sub>O.</p>
+
 <p><small>This small text is small for fine print, etc.</small></p>
+
 <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+
 <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q>, although generally it is better to directly type "quotation marks" because they can be copy/pasted by users.</p>
+
 <p><cite>This is a citation.</cite></p>
+
 <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+
 <p>The <mark>mark element</mark> indicates a highlight.</p>
+
 <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+
+<h4 class="example--subheading">Address</h4>
+
+<address>
+Visit us at:<br>
+42 Nowhere Town<br>
+Nomansland<br>
+Nullshire<br>
+NO1 2BE
+</address>
+
+<h4 class="example--subheading">Horizontal Rule</h4>
+
+<p>There is nothing special about the <code>&lt;hr&gt;</code>.</p>
+
+<hr>
+
+<p>It's just a single line.</p>
 </div>
 </article>
 
@@ -413,125 +411,132 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 <p>Images are responsive by default.</p>
 
 <h4 class="example--subheading">Plain <code>&lt;img&gt;</code> element</h4>
-<p><img src="imgs/160x200.png" alt="Placeholder image"></p>
+<p><img src="/lmdcss/docs/assets/160x200.png" alt="Placeholder image"></p>
 
 <h4 class="example--subheading"><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> element</h4>
 <figure>
-    <img src="imgs/200x200.png" alt="Placeholder image">
+    <img src="/lmdcss/docs/assets/200x200.png" alt="Placeholder image">
 </figure>
 
 <h4 class="example--subheading"><code>&lt;figure&gt;</code> element with <code>&lt;img&gt;</code> and <code>&lt;figcaption&gt;</code> elements</h4>
 <figure>
-    <img src="imgs/480x240.png" alt="Placeholder image">
+    <img src="/lmdcss/docs/assets/480x240.png" alt="Placeholder image">
     <figcaption>Here is a caption for this image.</figcaption>
 </figure>
+
+
+<h4 class="example--subheading">Plain <code>&lt;picture&gt;</code> element</h4>
+<picture>
+    <source srcset="/lmdcss/docs/assets/900x300.png" media="(min-width: 800px)">
+    <img src="/lmdcss/docs/assets/300x150.png" alt="Placeholder image" />
+</picture>
 
 <h4 class="example--subheading"><code>&lt;figure&gt;</code> element with a <code>&lt;picture&gt;</code> element</h4>
 <figure>
     <picture>
-        <source srcset="imgs/900x300.png" media="(min-width: 800px)">
-        <img src="imgs/300x150.png" alt="Placeholder image" />
+        <source srcset="/lmdcss/docs/assets/900x300.png" media="(min-width: 800px)">
+        <img src="/lmdcss/docs/assets/300x150.png" alt="Placeholder image" />
     </picture>
 </figure>
 </div>
 </article>
 
-<article id="embeds__audio" class="example">
+<article id="embeds__audio_video" class="example">
 <div class="example--header">
-<h3 class="example--heading">Audio</h3>
+<h3 class="example--heading">Audio/Video</h3>
 <div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
 </div>
 <div class="example--body">
-    <audio controls>
-        <source src="imgs/172547__colchrishadfield__us-lab-background.mp3" type="audio/wav">
-        Download the <a href="imgs/172547__colchrishadfield__us-lab-background.mp3">MP3</a> audio.
-    </audio>
+<h4 class="example--subheading">Audio</h4>
+<audio controls>
+    <source src="/lmdcss/docs/assets/172547__colchrishadfield__us-lab-background.mp3" type="audio/wav">
+    Download the <a href="/lmdcss/docs/assets/172547__colchrishadfield__us-lab-background.mp3">MP3</a> audio.
+</audio>
 
-    <p>Audio <a href="https://freesound.org/people/ColChrisHadfield/sounds/172547/">US Lab background</a> by ColChrisHadfield (from <a href="https://freesound.org">freesound.org</a>).</p>
+<p>Audio <a href="https://freesound.org/people/ColChrisHadfield/sounds/172547/">US Lab background</a> by ColChrisHadfield (from <a href="https://freesound.org">freesound.org</a>).</p>
+
+<h4 class="example--subheading">Video</h4>
+
+<video controls>
+    <source src="/lmdcss/docs/assets/mixkit-stars-in-space-background-1610-medium.mp4" type="video/mp4">
+    Download the <a href="/lmdcss/docs/assets/mixkit-stars-in-space-background-1610-medium.mp4">MP4</a> video.
+</video>
+<p>Video from <a href="https://mixkit.co/free-stock-video/stars-in-space-background-1610/">Stars in space background</a> (from <a href="https://mixkit.co">mixkit.co</a>).</p>
 </div>
 </article>
 
-<article id="embeds__video" class="example">
+<article id="embeds__canvas_svg" class="example">
 <div class="example--header">
-<h3 class="example--heading">Video</h3>
+<h3 class="example--heading">Canvas/SVG</h3>
 <div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
 </div>
 <div class="example--body">
-    <video width="300" controls>
-        <source src="imgs/Loading_Background.mp4" type="video/mp4">
-        Download the <a href="imgs/Loading_Background.mp4">MP4</a> video.
-    </video>
-    <p>Stock Video by <a href="http://www.videezy.com">Videezy</a></p>
+<h4 class="example--subheading">Canvas</h4>
+
+<canvas width="500" height="200">canvas</canvas>
+
+<h4 class="example--subheading">SVG</h4>
+<p>SVG is not treated as a block, so that it can be used inline with text.</p>
+
+<p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width: 100px; height:100px; vertical-align:middle">
+        <circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle>
+    </svg>
+</p>
+
+<p>
+    An example of inline SVG 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width: 1em; height:1em; vertical-align:middle">
+        <circle cx="16" cy="16" r="16" fill="#1fa3ec"></circle>
+    </svg> 
+    (useful for icons etc).
+</p>
 </div>
 </article>
 
-<article id="embeds__canvas" class="example">
+<article id="embeds__meter_progress" class="example">
 <div class="example--header">
-<h3 class="example--heading">Canvas</h3>
+<h3 class="example--heading">Meter/Progress</h3>
 <div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
 </div>
 <div class="example--body">
-<canvas width="300" height="200">canvas</canvas>
+<h4 class="example--subheading">Meter</h4>
+
+<p>
+    <label for="meter">Meter:</label>
+    <meter id="meter" min="0" max="100" value="75" low="33" high="66" optimum="50">
+        75 out of 100
+    </meter>
+</p>
+
+<h4 class="example--subheading">Progress</h4>
+
+<p>
+    <label for="prog">Progress:</label>
+    <progress id="prog" max="100" value="75">
+        progess: 75%
+    </progress>
+</p>
 </div>
 </article>
 
-<article id="embeds__meter" class="example">
+<article id="embeds__iframe_embed_object" class="example">
 <div class="example--header">
-<h3 class="example--heading">Meter</h3>
+<h3 class="example--heading">IFrame/Embed/Object</h3>
 <div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
 </div>
 <div class="example--body">
-<meter min="0" max="100" value="75" low="33" high="66" optimum="50">75 out of 100</meter>
-</div>
-</article>
+<p>The following are all loading the same HTML file.</p>
 
-<article id="embeds__progress" class="example">
-<div class="example--header">
-<h3 class="example--heading">Progress</h3>
-<div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
-</div>
-<div class="example--body">
-<progress max="100" value="75">progess: 75%</progress>
-</div>
-</article>
+<h4 class="example--subheading">Iframe</h4>
+<iframe src="/lmdcss/docs/demo-embeddable.html" height="300"></iframe>
 
-<article id="embeds__inline_svg" class="example">
-<div class="example--header">
-<h3 class="example--heading">Inline SVG</h3>
-<div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
-</div>
-<div class="example--body">
-<svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg>
-</div>
-</article>
 
-<article id="embeds__iframe" class="example">
-<div class="example--header">
-<h3 class="example--heading">IFrame</h3>
-<div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
-</div>
-<div class="example--body">
-<iframe src="demo-embeddable.html" height="300"></iframe>
-</div>
-</article>
+<h4 class="example--subheading">Embed</h4>
+<embed src="/lmdcss/docs/demo-embeddable.html" height="300">
 
-<article id="embeds__embed" class="example">
-<div class="example--header">
-<h3 class="example--heading">Embed</h3>
-<div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
-</div>
-<div class="example--body">
-<embed src="demo-embeddable.html" height="300">
-</div>
-</article>
-
-<article id="embeds__object" class="example">
-<div class="example--header">
-<h3 class="example--heading">Object</h3>
-<div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
-</div>
-<div class="example--body">
-<object data="demo-embeddable.html" height="300"></object>
+<h4 class="example--subheading">Object</h4>
+<object data="/lmdcss/docs/demo-embeddable.html" height="300"></object>
 </div>
 </article>
 
@@ -548,39 +553,39 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 </div>
 <div class="example--body">
 <p>
-  <label for="input__text">Text Input</label>
-  <input id="input__text" type="text" placeholder="Text Input">
-  <input type="text" value="Text input (disabled)" size="16" disabled>
-  <input type="text" value="Text input (readonly)" size="16" readonly>
+    <label for="input__text">Text Input</label>
+    <input id="input__text" type="text" placeholder="Text Input">
+    <input type="text" value="Text input (disabled)" size="16" disabled>
+    <input type="text" value="Text input (readonly)" size="16" readonly>
 </p>
 <p>
-  <label for="input__password">Password</label>
-  <input id="input__password" type="password" placeholder="Type your Password">
+    <label for="input__password">Password</label>
+    <input id="input__password" type="password" placeholder="Type your Password">
 </p>
 <p>
-  <label for="input__webaddress">Web Address</label>
-  <input id="input__webaddress" type="url" placeholder="http://www.example.com">
+    <label for="input__webaddress">Web Address</label>
+    <input id="input__webaddress" type="url" placeholder="http://www.example.com">
 </p>
 <p>
-  <label for="input__emailaddress">Email Address</label>
-  <input id="input__emailaddress" type="email" placeholder="name@example.com">
+    <label for="input__emailaddress">Email Address</label>
+    <input id="input__emailaddress" type="email" placeholder="name@example.com">
 </p>
 <p>
-  <label for="input__phone">Phone Number</label>
-  <input id="input__phone" type="tel" placeholder="00000 000000">
+    <label for="input__phone">Phone Number</label>
+    <input id="input__phone" type="tel" placeholder="00000 000000">
 </p>
 <p>
-  <label for="input__search">Search</label>
-  <input id="input__search" type="search" placeholder="Enter Search Term">
+    <label for="input__search">Search</label>
+    <input id="input__search" type="search" placeholder="Enter Search Term">
 </p>
 <p>
-  <label for="input__text2">Number Input</label>
-  <input id="input__text2" type="number" min="0" max="10" placeholder="Qty">
+    <label for="input__text2">Number Input</label>
+    <input id="input__text2" type="number" min="0" max="10" placeholder="Qty">
 </p>
 
 <p>
-  <label for="textarea">Textarea</label><br>
-  <textarea id="textarea" cols="45" rows="5" placeholder="Enter your message here"></textarea>
+    <label for="textarea">Textarea</label><br>
+    <textarea id="textarea" cols="45" rows="5" placeholder="Enter your message here"></textarea>
 </p>
 </div>
 </article>
@@ -592,66 +597,69 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 </div>
 <div class="example--body">
 <p>
-  <label for="select">Select</label>
-  <select id="select">
-    <optgroup label="Option Group">
-      <option>Option One</option>
-      <option>Option Two</option>
-      <option>Option Three</option>
-    </optgroup>
-  </select>
-  <select disabled>
-    <option selected>Option A</option>
-    <option>Option B</option>
-    <option>Option C</option>
-  </select>
-  <select>
-    <optgroup label="Theropods">
-      <option>Tyrannosaurus</option>
-      <option>Velociraptor</option>
-      <option>Deinonychus</option>
-    </optgroup>
-    <optgroup label="Sauropods">
-      <option>Diplodocus</option>
-      <option>Saltasaurus</option>
-      <option>Apatosaurus</option>
-    </optgroup>
-  </select>
+    <label for="select">Select:</label>
+    <select id="select">
+        <optgroup label="Option Group">
+            <option>Option One</option>
+            <option>Option Two</option>
+            <option>Option Three</option>
+        </optgroup>
+    </select><br>
+    Disabled Select: 
+    <select disabled>
+        <option selected>Option A</option>
+        <option>Option B</option>
+        <option>Option C</option>
+    </select><br>
+    With <code>optgroup</code>: 
+    <select>
+        <optgroup label="Theropods">
+            <option>Tyrannosaurus</option>
+            <option>Velociraptor</option>
+            <option>Deinonychus</option>
+        </optgroup>
+        <optgroup label="Sauropods">
+            <option>Diplodocus</option>
+            <option>Saltasaurus</option>
+            <option>Apatosaurus</option>
+        </optgroup>
+    </select>
 </p>
 
 <p>
-  <label for="select_multiple">Select (multiple)</label><br>
-  <select id="select_multiple" multiple size="5">
-    <optgroup label="Animal">
-      <option selected>Barbecue Chicken</option>
-      <option disabled>Peperami</option>
-      <option>Spicy Meatballs</option>
-    </optgroup>
-    <optgroup label="Vegetable">
-      <option>Olives</option>
-      <option>Spinach</option>
-      <option>Sundried Tomatos</option>
-    </optgroup>
-  </select>
+    <label for="select_multiple">Select (multiple)</label><br>
+    <select id="select_multiple" multiple size="5">
+        <optgroup label="Animal">
+            <option selected>Barbecue Chicken</option>
+            <option disabled>Peperami</option>
+            <option>Spicy Meatballs</option>
+        </optgroup>
+        <optgroup label="Vegetable">
+            <option>Olives</option>
+            <option>Spinach</option>
+            <option>Sundried Tomatos</option>
+        </optgroup>
+    </select>
 </p>
 
 <p>
-  <label for="idl">Datalist</label>
-  <input type="text" id="idl" list="heroes" size="16" placeholder="Choose a hero">
-  <datalist id="heroes">
-    <option>Bananaman</option>
-    <option>Batman</option>
-    <option>Black Panther</option>
-    <option>Captain Marvel</option>
-    <option>Doctor Strange</option>
-    <option>Hulk</option>
-    <option>Iron Man</option>
-    <option>Jean Grey</option>
-    <option>Spider-Man</option>
-    <option>Squirrel Girl</option>
-    <option>Wolverine</option>
-    <option>Wonder Woman</option>
-  </datalist>
+    <label for="idl">Datalist*</label>
+    <input type="text" id="idl" list="heroes" size="16" placeholder="Choose a hero">
+    <datalist id="heroes">
+        <option>Bananaman</option>
+        <option>Batman</option>
+        <option>Black Panther</option>
+        <option>Captain Marvel</option>
+        <option>Doctor Strange</option>
+        <option>Hulk</option>
+        <option>Iron Man</option>
+        <option>Jean Grey</option>
+        <option>Spider-Man</option>
+        <option>Squirrel Girl</option>
+        <option>Wolverine</option>
+        <option>Wonder Woman</option>
+    </datalist> 
+    (* may not be implemented by your browser!)
 </p>
 </div>
 </article>
@@ -665,21 +673,21 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 <p>Also an example of <code>fieldset</code> and <code>legend</code>.</p>
 
 <fieldset id="forms__checkbox">
-  <legend>Checkboxes</legend>
-  <ul>
-    <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-    <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-    <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" disabled> Choice C</label></li>
-  </ul>
+    <legend>Checkboxes</legend>
+    <ul>
+        <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+        <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+        <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" disabled> Choice C</label></li>
+    </ul>
 </fieldset>
 
 <fieldset id="forms__radio">
-  <legend>Radio buttons</legend>
-  <ul>
-    <li><label for="radio1"><input id="radio1" name="radio" type="radio" checked="checked"> Option 1</label></li>
-    <li><label for="radio2"><input id="radio2" name="radio" type="radio" disabled> Option 2</label></li>
-    <li><label for="radio3"><input id="radio3" name="radio" type="radio"> Option 3</label></li>
-  </ul>
+    <legend>Radio buttons</legend>
+    <ul>
+        <li><label for="radio1"><input id="radio1" name="radio" type="radio" checked="checked"> Option 1</label></li>
+        <li><label for="radio2"><input id="radio2" name="radio" type="radio" disabled> Option 2</label></li>
+        <li><label for="radio3"><input id="radio3" name="radio" type="radio"> Option 3</label></li>
+    </ul>
 </fieldset>
 </div>
 </article>
@@ -693,64 +701,64 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 <p>Some of the following fields may not be implemented by your browser!</p>
 
 <p>
-  <label for="idd">Date input</label>
-  <input type="date" id="idd" value="1970-01-01">
+    <label for="idd">Date input</label>
+    <input type="date" id="idd" value="1970-01-01">
 </p>
 <p>
-  <label for="it">Time input</label>
-  <input type="time" id="it" value="10:30:00">
+    <label for="it">Time input</label>
+    <input type="time" id="it" value="10:30:00">
 </p>
 <p>
-  <label for="idtl">Datetime-local input</label>
-  <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+    <label for="idtl">Datetime-local input</label>
+    <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
 </p>
 <p>
-  <label for="idm">Month input</label>
-  <input type="month" id="idm" value="1970-01">
+    <label for="idm">Month input</label>
+    <input type="month" id="idm" value="1970-01">
 </p>
 <p>
-  <label for="idw">Week input</label>
-  <input type="week" id="idw" value="1970-W01">
+    <label for="idw">Week input</label>
+    <input type="week" id="idw" value="1970-W01">
 </p>
 </div>
 </article>
 
-<article id="forms__other" class="example">
+<article id="forms__other_inputs" class="example">
 <div class="example--header">
-<h3 class="example--heading">Other</h3>
+<h3 class="example--heading">Other Inputs</h3>
 <div class="example--top"><a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">Top</span></a><a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">Top</span></a></div>
 </div>
 <div class="example--body">
 <p>Some of the following fields may not be implemented by your browser!</p>
 
 <p>
-  <label for="col">Color input</label>
-  <input type="color" id="col" value="#dd0000" oninput="colhex.value=col.value"><br>
-  Output: <output name="colhex" for="col">#dd0000</output>
+    <label for="col">Color input</label>
+    <input type="color" id="col" value="#dd0000" oninput="colhex.value=col.value"><br>
+    Output: <output name="colhex" for="col">#dd0000</output>
 </p>
 <p>
-  <label for="r">Range</label>
-  <input type="range" name="r" id="r" list="rdata" min="0" max="10" value="5" oninput="result.value=parseInt(r.value)"> 
-  <output name="result" for="r">5</output>
-  <datalist id="rdata">
-    <option value="0" label="0"></option>
-    <option value="1"></option>
-    <option value="2"></option>
-    <option value="3"></option>
-    <option value="4"></option>
-    <option value="5" label="5"></option>
-    <option value="6"></option>
-    <option value="7"></option>
-    <option value="8"></option>
-    <option value="9"></option>
-    <option value="10" label="10"></option>
-  </datalist><br>
-  <label for="rb">Disabled:</label> <input type="range" name="rb" id="rb" min="0" max="10" value="5" disabled>
+    <label for="r">Range</label>
+    <input type="range" name="r" id="r" list="rdata" min="0" max="10" value="5" oninput="result.value=parseInt(r.value)">
+    <output name="result" for="r">5</output>
+    <datalist id="rdata">
+        <option value="0" label="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5" label="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10" label="10"></option>
+    </datalist><br>
+    <label for="rb">Disabled:</label> <input type="range" name="rb" id="rb" min="0" max="10" value="5" disabled>
 </p>
 
 <p>
-  <label for="input__file">File Input</label>
-  <input id="input__file" type="file">
+    <label for="input__file">File Input</label>
+    <input id="input__file" type="file">
 </p>
 </div>
 </article>
@@ -762,20 +770,20 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 </div>
 <div class="example--body">
 <p>
-  <input type="submit" value="<input type=submit>">
-  <input type="button" value="<input type=button>">
-  <input type="reset" value="<input type=reset>">
-  <input type="submit" value="<input disabled>" disabled>
+    <input type="submit" value="<input type=submit>">
+    <input type="button" value="<input type=button>">
+    <input type="reset" value="<input type=reset>">
+    <input type="submit" value="<input disabled>" disabled>
 </p>
 <p>
-  <button type="submit">&lt;button type=submit&gt;</button>
-  <button type="button">&lt;button type=button&gt;</button>
-  <button type="reset">&lt;button type=reset&gt;</button>
-  <button type="button" disabled>&lt;button disabled&gt;</button>
+    <button type="submit">&lt;button type=submit&gt;</button>
+    <button type="button">&lt;button type=button&gt;</button>
+    <button type="reset">&lt;button type=reset&gt;</button>
+    <button type="button" disabled>&lt;button disabled&gt;</button>
 </p>
 <p>Image button (use your own image<br>
-  <input type="image" src="imgs/default-btn-img.png" alt="Image Button">
-  <input type="image" src="imgs/default-btn-img.png" alt="Image Button disabled" disabled>
+    <input type="image" src="/lmdcss/docs/assets/default-btn-img.png" alt="Image Button">
+    <input type="image" src="/lmdcss/docs/assets/default-btn-img.png" alt="Image Button disabled" disabled>
 </p>
 </div>
 </article>
@@ -785,66 +793,68 @@ document.getElementById('test').textContent = "Lorem ipsum dolor sit amet, conse
 </main>
 
 <footer id="footer">
-	<p class="credit">
-		Modified from the HTML5 test page made by <a href="http://github.com/cbracco/html5-test-page">cbracco</a>.
-	</p>
-	<p class="to-top">
-		<a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">To Top</span></a>
-		<a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">To Top</span></a>
-	</p>
+    <p class="credit">
+        Modified from the HTML5 test page made by <a href="http://github.com/cbracco/html5-test-page">cbracco</a>.
+    </p>
+    <p class="to-top">
+        <a href="#grid" class="screen-small" title="to top">&uarr;<span class="vh">To Top</span></a>
+        <a href="#text" class="screen-large" title="to top">&uarr;<span class="vh">To Top</span></a>
+    </p>
 </footer>
 </div>
 <script type="text/javascript">
 DOMReady(function () {
-	/**
-	 * Render canvas image
-	 */
-	const canvas = document.querySelector('canvas');
-	const ctx = canvas.getContext('2d');
-	ctx.fillStyle = '#009900';
-	ctx.fillRect(10, 10, 280, 180);
+    /**
+     * Render canvas image
+     */
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#ff0000';
+    ctx.fillRect(0, 0, 500, 200);
+    ctx.fillStyle = '#009900';
+    ctx.fillRect(5, 5, 490, 190);
 
-	/**
-	 * Fallbacks for some HTML5 inputs that older browsers don't render
-	 */
-	var html5 = [
-		'date', 'datetime-local', 'month', 'week', 'time', 'color'
-	];
+    /**
+     * Fallbacks for some HTML5 inputs that older browsers don't render
+     */
+    var html5 = [
+        'date', 'datetime-local', 'month', 'week', 'time', 'color'
+    ];
 
-	var inputColor = document.querySelectorAll('input[type=color]');
-	if (inputColor) {
-		for (var i = 0; i < inputColor.length; i++) {
-			var type = inputColor[i].type; // what the browser renders
-			var val = inputColor[i].value; // current value
+    var inputColor = document.querySelectorAll('input[type=color]');
+    if (inputColor) {
+        for (var i = 0; i < inputColor.length; i++) {
+            var type = inputColor[i].type; // what the browser renders
+            var val = inputColor[i].value; // current value
 
-			inputColor[i].value = '!'; // make val invalid
+            inputColor[i].value = '!'; // make val invalid
 
-			if (type !== 'color' || (type === 'color' && inputColor[i].value === '!')) {
-				inputColor[i].setAttribute('type', 'text'); // force text input rendering
-			}
+            if (type !== 'color' || (type === 'color' && inputColor[i].value === '!')) {
+                inputColor[i].setAttribute('type', 'text'); // force text input rendering
+            }
 
-			inputColor[i].value = (val !== null) ? val : ''; // reset val to original
-		}
-	}
+            inputColor[i].value = (val !== null) ? val : ''; // reset val to original
+        }
+    }
 /*
-	var inputMeter = document.querySelectorAll('meter');
-	if (inputMeter) {
-		for (var i = 0; i < inputMeter.length; i++) {
-			//var type = inputMeter[i].type; // what the browser renders
-			var val = inputMeter[i].value; // current value
+    var inputMeter = document.querySelectorAll('meter');
+    if (inputMeter) {
+        for (var i = 0; i < inputMeter.length; i++) {
+            //var type = inputMeter[i].type; // what the browser renders
+            var val = inputMeter[i].value; // current value
 
-			try {
-				inputMeter[i].value = '!'; // make val invalid
-				if (inputMeter[i].value === '!') {
-					let classes = inputMeter[i].getAttribute('class');
-					classes = (classes) ? classes + ' form-fallback' : 'form-fallback';
-					inputMeter[i].setAttribute('class', classes); // add fallback class
-				}
-			} catch(e) {
-			}
-			inputMeter[i].value = (val !== null) ? val : 0; // reset val to original
-		}
-	}
+            try {
+                inputMeter[i].value = '!'; // make val invalid
+                if (inputMeter[i].value === '!') {
+                    let classes = inputMeter[i].getAttribute('class');
+                    classes = (classes) ? classes + ' form-fallback' : 'form-fallback';
+                    inputMeter[i].setAttribute('class', classes); // add fallback class
+                }
+            } catch(e) {
+            }
+            inputMeter[i].value = (val !== null) ? val : 0; // reset val to original
+        }
+    }
 */
 });
 </script>
