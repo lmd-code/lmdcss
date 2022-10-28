@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.3] - 2022-10-28
+
+### Added
+
+- Added new variable `--lmdcss-body-size` to set the default `<body>` text size in REMs according to absolute pixel size. The media query to set the `<body>` text size on wide screens is now replaced by a query to reset the `--lmdcss-body-size` variable instead. This makes it easier to set the size of any element to the current default (by referring to the var) without having to do separate media queries.
+
 ## [1.2.2] - 2022-10-11
 
 ### Fixed

@@ -18,25 +18,33 @@ A *mildly opinionated* default CSS file created for my own projects. This is not
 The defaults are my own preferences.
 
 ```css
---lmdcss-font-serif: Cambria, Times, "Times New Roman", serif;
---lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
---lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
---lmdcss-font-size: 16px;
---lmdcss-font-weight: 400;
---lmdcss-margins: 1rem 0;
---lmdcss-borders: 1px solid #a0a0a0;
---lmdcss-focus-outline: 2px dotted #202020;
---lmdcss-button: #d0d0d0;
---lmdcss-button-hover: #e0e0e0;
---lmdcss-button-active: #b0b0b0;
---lmdcss-text-dark: #000000;
---lmdcss-text-medium: #606060;
---lmdcss-text-light: #ffffff;
---lmdcss-bg-dark: #404040;
---lmdcss-bg-medium: #e3e3e3;
---lmdcss-bg-light: #ffffff;
---lmdcss-mark-bg: #ffff44;
---lmdcss-mark-text: #000000;
+ :root {
+    --lmdcss-font-serif: Cambria, Times, "Times New Roman", serif;
+    --lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
+    --lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
+    --lmdcss-font-size: 16px;
+    --lmdcss-body-size: 1rem; /* default body text size */
+    --lmdcss-font-weight: 400;
+    --lmdcss-margins: 1rem 0;
+    --lmdcss-borders: 1px solid #a0a0a0;
+    --lmdcss-focus-outline: 2px dotted #202020;
+    --lmdcss-button: #d0d0d0;
+    --lmdcss-button-hover: #e0e0e0;
+    --lmdcss-button-active: #b0b0b0;
+    --lmdcss-text-dark: #000000;
+    --lmdcss-text-medium: #606060;
+    --lmdcss-text-light: #ffffff;
+    --lmdcss-bg-dark: #404040;
+    --lmdcss-bg-medium: #e3e3e3;
+    --lmdcss-bg-light: #ffffff;
+    --lmdcss-mark-bg: #ffff44;
+    --lmdcss-mark-text: #000000;
+ }
+@media screen and (min-width: 900px) {
+    :root {
+        --lmdcss-body-size: 1.125rem; /* wide-screen body text size */
+    }
+}
 ```
 
 ## Demo

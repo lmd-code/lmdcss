@@ -3,7 +3,7 @@
  * Author: LMD-Code
  * See: https://github.com/lmd-code/lmdcss/
  * Copyright: CC0-1.0
- * Version: 1.2.2
+ * Version: 1.3
  * 
  * Edit variables or overwrite them in your own CSS file.
  */
@@ -12,6 +12,7 @@
 	--lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
 	--lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
 	--lmdcss-font-size: 16px;
+	--lmdcss-body-size: 1rem; /* default body text size */
 	--lmdcss-font-weight: 400;
 	--lmdcss-margins: 1rem 0;
 	--lmdcss-borders: 1px solid #a0a0a0;
@@ -28,6 +29,11 @@
 	--lmdcss-mark-bg: #ffff44;
     --lmdcss-mark-text: #000000;
 }
+@media screen and (min-width: 900px) {
+	:root {
+		--lmdcss-body-size: 1.125rem; /* wide-screen body text size */
+	}
+}
 
 html,
 *,
@@ -40,7 +46,7 @@ html,
 html {
 	overflow-wrap: break-word;
 	line-height: 1.625;
-	font-size: var(--lmdcss-font-size);
+	font-size: var(--lmdcss-font-size); /* base pixel font size */
 	font-size-adjust: 0.5;
 	font-weight: var(--lmdcss-font-weight);
 	-moz-text-size-adjust: none;
@@ -53,12 +59,7 @@ body {
 	background: var(--lmdcss-bg-light);
 	color: var(--lmdcss-text-dark);
 	font-family: var(--lmdcss-font-serif);
-	font-size: 1rem;
-}
-@media screen and (min-width: 900px) {
-	body {
-		font-size: 1.125rem;
-	}
+	font-size: var(--lmdcss-body-size); /* REM size according to screen width */
 }
 
 header,
