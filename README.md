@@ -18,7 +18,7 @@ A *mildly opinionated* default CSS file created for my own projects. This is not
 The defaults are my own preferences.
 
 ```css
- :root {
+:root {
     --lmdcss-font-serif: Cambria, Times, "Times New Roman", serif;
     --lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
     --lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
@@ -39,7 +39,7 @@ The defaults are my own preferences.
     --lmdcss-bg-light: #ffffff;
     --lmdcss-mark-bg: #ffff44;
     --lmdcss-mark-text: #000000;
- }
+}
 @media screen and (min-width: 900px) {
     :root {
         --lmdcss-body-size: 1.125rem; /* wide-screen body text size */
