@@ -45,7 +45,7 @@ html,
 
 html {
 	overflow-wrap: break-word;
-	line-height: 1.4;
+	line-height: 1.5;
 	font-size: var(--lmdcss-font-size); /* base pixel font size */
 	font-size-adjust: 0.5;
 	font-weight: var(--lmdcss-font-weight);
