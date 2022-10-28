@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
-## [1.3] - 2022-10-28
+## [1.3.0] - 2022-10-28
 
 ### Added
 
@@ -104,7 +104,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - First public release.
 
-[Unreleased]: https://github.com/lmd-code/lmdcss/compare/v1.2.2...HEAD
+[Unreleased]: https://github.com/lmd-code/lmdcss/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.3.0
 [1.2.2]: https://github.com/lmd-code/lmdcss/releases/tag/v1.2.2
 [1.2.1]: https://github.com/lmd-code/lmdcss/releases/tag/v1.2.1
 [1.2.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.2.0
