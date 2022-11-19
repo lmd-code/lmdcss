@@ -3,63 +3,63 @@
  * Author: LMD-Code
  * See: https://github.com/lmd-code/lmdcss/
  * Copyright: CC0-1.0
- * Version: 1.3.1
+ * Version: 1.4.0
  * 
  * Edit variables or overwrite them in your own CSS file.
  */
  :root {
-	--lmdcss-font-serif: Cambria, Times, "Times New Roman", serif;
-	--lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
-	--lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
-	--lmdcss-font-size: 16px;
-	--lmdcss-body-size: 1rem; /* default body text size */
-	--lmdcss-font-weight: 400;
-	--lmdcss-margins: 1rem 0;
-	--lmdcss-borders: 1px solid #a0a0a0;
-	--lmdcss-focus-outline: 2px dotted #202020;
-	--lmdcss-button: #d0d0d0;
-	--lmdcss-button-hover: #e0e0e0;
-	--lmdcss-button-active: #b0b0b0;
-	--lmdcss-text-dark: #000000;
-	--lmdcss-text-medium: #606060;
-	--lmdcss-text-light: #ffffff;
-	--lmdcss-bg-dark: #404040;
-	--lmdcss-bg-medium: #e3e3e3;
-	--lmdcss-bg-light: #ffffff;
-	--lmdcss-mark-bg: #ffff44;
+    --lmdcss-font-serif: Cambria, Times, "Times New Roman", serif;
+    --lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
+    --lmdcss-font-size: 16px;
+    --lmdcss-body-size: 1rem; /* default body text size */
+    --lmdcss-font-weight: 400;
+    --lmdcss-margins: 1rem 0;
+    --lmdcss-borders: 1px solid #a0a0a0;
+    --lmdcss-focus-outline: 2px dotted #202020;
+    --lmdcss-button: #d0d0d0;
+    --lmdcss-button-hover: #e0e0e0;
+    --lmdcss-button-active: #b0b0b0;
+    --lmdcss-text-dark: #000000;
+    --lmdcss-text-medium: #606060;
+    --lmdcss-text-light: #ffffff;
+    --lmdcss-bg-dark: #404040;
+    --lmdcss-bg-medium: #e3e3e3;
+    --lmdcss-bg-light: #ffffff;
+    --lmdcss-mark-bg: #ffff44;
     --lmdcss-mark-text: #000000;
 }
 @media screen and (min-width: 900px) {
-	:root {
-		--lmdcss-body-size: 1.125rem; /* wide-screen body text size */
-	}
+    :root {
+        --lmdcss-body-size: 1.125rem; /* wide-screen body text size */
+    }
 }
 
 html,
 *,
 ::before,
 ::after {
-	box-sizing: border-box;
-	min-width: 0; /* fix flexbox 'min-width: auto' and <pre> tag overflow bug */
+    box-sizing: border-box;
+    min-width: 0; /* fix flexbox 'min-width: auto' and <pre> tag overflow bug */
 }
 
 html {
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	font-size: var(--lmdcss-font-size); /* base pixel font size */
-	font-size-adjust: 0.5;
-	font-weight: var(--lmdcss-font-weight);
-	-moz-text-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	text-size-adjust: none;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    font-size: var(--lmdcss-font-size); /* base pixel font size */
+    font-size-adjust: 0.5;
+    font-weight: var(--lmdcss-font-weight);
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 body {
-	margin: 0;
-	padding: 0;
-	background: var(--lmdcss-bg-light);
-	color: var(--lmdcss-text-dark);
-	font-family: var(--lmdcss-font-serif);
-	font-size: var(--lmdcss-body-size); /* REM size according to screen width */
+    margin: 0;
+    padding: 0;
+    background: var(--lmdcss-bg-light);
+    color: var(--lmdcss-text-dark);
+    font-family: var(--lmdcss-font-serif);
+    font-size: var(--lmdcss-body-size); /* REM size according to screen width */
 }
 
 header,
@@ -68,7 +68,7 @@ main,
 article,
 aside,
 section {
-	display: block;
+    display: block;
 }
 
 h1,
@@ -83,8 +83,8 @@ ol,
 dl,
 pre,
 address {
-	margin: var(--lmdcss-margins);
-	padding: 0;
+    margin: var(--lmdcss-margins);
+    padding: 0;
 }
 
 p:last-child,
@@ -93,7 +93,7 @@ ol:last-child,
 dl:last-child,
 pre:last-child,
 address:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 h1,
@@ -102,45 +102,45 @@ h3,
 h4,
 h5,
 h6 {
-	margin-bottom: 1rem;
-	font-family: var(--lmdcss-font-sans-serif);
-	font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: var(--lmdcss-font-sans-serif);
+    font-weight: 500;
 }
 h1 {
-	font-size: 2em; 
-	line-height: 1;
+    font-size: 2em; 
+    line-height: 1;
 }
 h2 {
-	font-size: 1.8em;
-	line-height: 1.05;
+    font-size: 1.8em;
+    line-height: 1.05;
 }
 h3 {
-	font-size: 1.6em;
-	line-height: 1.1;
+    font-size: 1.6em;
+    line-height: 1.1;
 }
 h4 {
-	font-size: 1.4em;
-	line-height: 1.15;
+    font-size: 1.4em;
+    line-height: 1.15;
 }
 h5 {
-	font-size: 1.2em;
-	line-height: 1.2;
+    font-size: 1.2em;
+    line-height: 1.2;
 }
 h6 {
-	font-size: 1em;
-	line-height: 1.25;
+    font-size: 1em;
+    line-height: 1.25;
 }
 
 ul,
 ol {
-	list-style-position: outside;
+    list-style-position: outside;
 }
 dt {
-	font-weight: 500;
+    font-weight: 500;
 }
 li,
 dd {
-	margin: 0 0 0.5rem 2rem;
+    margin: 0 0 0.5rem 2rem;
 }
 li:last-child,
 dt:last-child,
@@ -151,15 +151,15 @@ li dl,
 dd ul,
 dd ol,
 dd dl {
-	margin: 0;
+    margin: 0;
 }
 
 blockquote,
 figure > blockquote ~ figcaption {
-	margin: var(--lmdcss-margins);
-	margin-left: 3rem;
-	margin-right: 3rem;
-	padding: 0;
+    margin: var(--lmdcss-margins);
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 0;
 }
 blockquote > :first-child {margin-top: 0;}
 blockquote > :last-child {margin-bottom: 0;}
@@ -171,7 +171,7 @@ table {
     padding: 0;
 }
 caption {
-	font-style: normal;
+    font-style: normal;
 }
 th,
 td {
@@ -183,48 +183,48 @@ th {
 }
 
 pre {
-	position: relative;
-	margin: var(--lmdcss-margins);
-	font-family: var(--lmdcss-font-monospace);
-	font-weight: var(--lmdcss-font-weight);
-	tab-size: 4;
-	line-height: 1.2;
-	overflow-x: auto;
+    position: relative;
+    margin: var(--lmdcss-margins);
+    font-family: var(--lmdcss-font-monospace);
+    font-weight: var(--lmdcss-font-weight);
+    tab-size: 4;
+    line-height: 1.2;
+    overflow-x: auto;
 }
 
 pre > code {
-	display: block;
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem;
-	padding: 2rem 1rem 1rem 1rem;
-	background-color: var(--lmdcss-bg-dark);
-	color: var(--lmdcss-text-light);
-	overflow-x: auto;
+    display: block;
+    border: var(--lmdcss-borders);
+    border-radius: 0.125rem;
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: var(--lmdcss-bg-dark);
+    color: var(--lmdcss-text-light);
+    overflow-x: auto;
 }
 
 pre > code[title]::before {
-	content: attr(title);
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	display: block;
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem 0.125rem 0 0;
-	padding: 0.25em 0.5em;
-	background-color: var(--lmdcss-bg-medium);
-	color: var(--lmdcss-text-dark);
-	font-size: 0.75em;
-	line-height: 1;
-	text-transform: uppercase;
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    border: var(--lmdcss-borders);
+    border-radius: 0.125rem 0.125rem 0 0;
+    padding: 0.25em 0.5em;
+    background-color: var(--lmdcss-bg-medium);
+    color: var(--lmdcss-text-dark);
+    font-size: 0.75em;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 hr {
-	height: 1px;
-	border: 0;
-	margin: 1.5rem 0;
-	line-height: 0;
-	background-color: var(--lmdcss-bg-dark);
+    height: 1px;
+    border: 0;
+    margin: 1.5rem 0;
+    line-height: 0;
+    background-color: var(--lmdcss-bg-dark);
 }
 
 /** INLINE **/
@@ -234,18 +234,18 @@ samp,
 var,
 code,
 tt {
-	font-family: var(--lmdcss-font-monospace);
+    font-family: var(--lmdcss-font-monospace);
 }
 
 b,
 strong {
-	font-weight: 600;
+    font-weight: 600;
 }
 
 i,
 em,
 cite {
-	font-style: italic;
+    font-style: italic;
 }
 
 small {
@@ -286,7 +286,7 @@ img {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-	border: none;
+    border: none;
 }
 
 picture,
@@ -298,22 +298,22 @@ canvas {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-	margin: var(--lmdcss-margins);
-	border: none;
-	padding: 0;
+    margin: var(--lmdcss-margins);
+    border: none;
+    padding: 0;
 }
 
 figure {
-	display: block;
-	margin: var(--lmdcss-margins);
-	padding: 0;
+    display: block;
+    margin: var(--lmdcss-margins);
+    padding: 0;
 }
 figcaption {
-	display: block;
-	font-style: normal;
+    display: block;
+    font-style: normal;
 }
 figure img {
-	display: block;
+    display: block;
 }
 
 figure > picture,
@@ -342,50 +342,50 @@ svg {
 /** IFRAMES/EMBEDS/OBJECTS */
 
 embed, iframe, object {
-	display: block;
-	width: 100%;
-	margin: var(--lmdcss-margins);
-	border: none;
-	padding: 0;
+    display: block;
+    width: 100%;
+    margin: var(--lmdcss-margins);
+    border: none;
+    padding: 0;
 }
 
 /** FORMS **/
 
 form {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 fieldset {
-	margin: 0 0 1rem 0;
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem;
-	padding: 1em;
+    margin: 0 0 1rem 0;
+    border: var(--lmdcss-borders);
+    border-radius: 0.125rem;
+    padding: 1em;
 }
 fieldset > :nth-child(2) {margin-top: 0; /* first child after legend */}
 fieldset > :last-child {margin-bottom: 0;}
 
 legend {
-	padding: 0 0.25em;
-	font-weight: 500;
+    padding: 0 0.25em;
+    font-weight: 500;
 }
 
 /* <input> / <button> */
 input,
 button {
-	margin: 0;
-	font-family: inherit;
-	font-size: 1em;
-	font-weight: var(--lmdcss-font-weight);
-	vertical-align: baseline;
-	text-transform: none;
-	overflow: visible;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: var(--lmdcss-font-weight);
+    vertical-align: baseline;
+    text-transform: none;
+    overflow: visible;
 }
 
 input:focus,
 textarea:focus {
-	outline: var(--lmdcss-focus-outline);
-	outline-offset: -2px;
+    outline: var(--lmdcss-focus-outline);
+    outline-offset: -2px;
 }
 
 /* Text inputs */
@@ -401,95 +401,95 @@ textarea:focus {
 [type=password],
 [type=search],
 [type=text] {
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem;
-	padding: 0.25em 0.5em;
+    border: var(--lmdcss-borders);
+    border-radius: 0.125rem;
+    padding: 0.25em 0.5em;
 }
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-calendar-picker-indicator {
-	/* Make the height of the input the same as other inputs in Chrome/Edge */
-	padding: 0;
-	padding-inline: 0;
+    /* Make the height of the input the same as other inputs in Chrome/Edge */
+    padding: 0;
+    padding-inline: 0;
 }
 
 /* Checkbox / Radio inputs */
 [type=checkbox],
 [type=radio] {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	border: var(--lmdcss-borders);
-	line-height: 1;
-	vertical-align: middle;
-	cursor: default;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: var(--lmdcss-borders);
+    line-height: 1;
+    vertical-align: middle;
+    cursor: default;
 }
 
 /* Color picker */
 [type=color] {
-	width: 1.5em;
-	height: 1.5em;
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem;
-	padding-block: 0;
-	padding-inline: 0;
-	padding: 0.125em;
-	background-color: var(--lmdcss-bg-light); 
-	vertical-align: middle;
-	cursor: default;
+    width: 1.5em;
+    height: 1.5em;
+    border: var(--lmdcss-borders);
+    border-radius: 0.125rem;
+    padding-block: 0;
+    padding-inline: 0;
+    padding: 0.125em;
+    background-color: var(--lmdcss-bg-light); 
+    vertical-align: middle;
+    cursor: default;
 }
 ::-webkit-color-swatch-wrapper {
-	padding: 0; /* Decrease inner padding in Chrome/Edge */
+    padding: 0; /* Decrease inner padding in Chrome/Edge */
 }
 
 /* File Selector */
 [type=file] {
-	cursor: default;
+    cursor: default;
 }
 ::file-selector-button,
 ::-webkit-file-upload-button {
-	/* Make the button look like other buttons */
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem;
-	padding: 0.25em 0.5em;
-	background-color: var(--lmdcss-button);
-	color: var(--lmdcss-text-dark);
-	font-family: var(--lmdcss-font-sans-serif);
-	font-size: 1em;
-	font-weight: var(--lmdcss-font-weight);
-	cursor: default;
+    /* Make the button look like other buttons */
+    border: var(--lmdcss-borders);
+    border-radius: 0.125rem;
+    padding: 0.25em 0.5em;
+    background-color: var(--lmdcss-button);
+    color: var(--lmdcss-text-dark);
+    font-family: var(--lmdcss-font-sans-serif);
+    font-size: 1em;
+    font-weight: var(--lmdcss-font-weight);
+    cursor: default;
 }
 ::file-selector-button:hover,
 ::-webkit-file-upload-button:hover {
-	background-color: var(--lmdcss-button-hover);
+    background-color: var(--lmdcss-button-hover);
 }
 ::file-selector-button:active,
 ::-webkit-file-upload-button:active {
-	background-color: var(--lmdcss-button-active);
+    background-color: var(--lmdcss-button-active);
 }
 
 /* Image (Button) */
 [type=image] {
-	border: none;
-	padding: 0;
-	vertical-align: middle;
-	transition: all .2s ease-in-out;
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+    transition: all .2s ease-in-out;
 }
 [type=image]:hover {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
 [type=image]:not(:disabled):active {
-	transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 /* Range */
 [type=range] {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 [type=range]:disabled,
 [type=range]:disabled:active,
 [type=range]:disabled:hover,
 [type=range]:disabled:focus {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 /* <button> <input type=button|submit|reset> */
@@ -497,119 +497,123 @@ button,
 [type=button],
 [type=submit],
 [type=reset] {
-	-webkit-appearance: button;
-	border: var(--lmdcss-borders);
-	border-radius: 0.25rem;
-	padding: 0.25em 0.5em;
-	background-color: var(--lmdcss-button);
-	color: var(--lmdcss-text-dark);
-	cursor: default;
-	transition: all .2s ease-in-out;
+    -webkit-appearance: button;
+    border: var(--lmdcss-borders);
+    border-radius: 0.25rem;
+    padding: 0.25em 0.5em;
+    background-color: var(--lmdcss-button);
+    color: var(--lmdcss-text-dark);
+    cursor: default;
+    transition: all .2s ease-in-out;
 }
 button:hover,
 [type=button]:hover,
 [type=submit]:hover,
 [type=reset]:hover {
-	background-color: var(--lmdcss-button-hover);
+    background-color: var(--lmdcss-button-hover);
 }
 button:focus,
 [type=button]:focus,
 [type=submit]:focus,
 [type=reset]:focus {
-	background-color: var(--lmdcss-button-hover);
-	outline: var(--lmdcss-focus-outline);
-	outline-offset: -2px;
+    background-color: var(--lmdcss-button-hover);
+    outline: var(--lmdcss-focus-outline);
+    outline-offset: -2px;
 }
 button:not(:disabled):active,
 [type=button]:not(:disabled):active,
 [type=submit]:not(:disabled):active,
 [type=reset]:not(:disabled):active {
-	transform: scale(0.95);
-	background-color: var(--lmdcss-button-active);
+    transform: scale(0.95);
+    background-color: var(--lmdcss-button-active);
 }
 
 /* <meter> <progress> */
 meter,
 progress {
-	border: var(--lmdcss-borders);
+    border: var(--lmdcss-borders);
 }
 ::-webkit-progress-bar,
 ::-webkit-meter-bar {
-	background: var(--lmdcss-bg-light);
+    background: var(--lmdcss-bg-light);
 }
 ::-webkit-meter-bar {
-	border: var(--lmdcss-borders);
+    border: var(--lmdcss-borders);
 }
 ::-webkit-progress-value {
-	background-color: var(--lmdcss-button-active);
+    background-color: var(--lmdcss-button-active);
 }
 
 /* <textarea> */
 textarea {
-	max-width: 100%;
-	margin: 0;
-	border: var(--lmdcss-borders);
-	border-radius: 0.125rem;
-	padding: 0.25em 0.5em;
-	font-family: inherit;
-	font-size: 1em;
-	font-weight: var(--lmdcss-font-weight);
-	resize: vertical;
+    max-width: 100%;
+    margin: 0;
+    border: var(--lmdcss-borders);
+    border-radius: 0.125rem;
+    padding: 0.25em 0.5em;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: var(--lmdcss-font-weight);
+    resize: vertical;
 }
 
 /* <select> */
 select {
-	margin: 0;
-	border: var(--lmdcss-borders);
-	padding-block: 0;
-	font-family: inherit;
-	font-size: 1em;
-	font-weight: var(--lmdcss-font-weight);
-	background: var(--lmdcss-bg-light);
+    margin: 0;
+    border: var(--lmdcss-borders);
+    padding-block: 0;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: var(--lmdcss-font-weight);
+    background: var(--lmdcss-bg-light);
 }
 select:focus-visible,
 select:focus-within {
-	outline: var(--lmdcss-focus-outline);
-	outline-offset: -2px;
+    outline: var(--lmdcss-focus-outline);
+    outline-offset: -2px;
 }
 select:not([multiple]) {
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 option {
-	font: inherit;
+    font: inherit;
 }
 option:disabled {
-	font-style: italic;
-	color: var(--lmdcss-text-medium);
+    font-style: italic;
+    color: var(--lmdcss-text-medium);
 }
 select > option,
 datalist > option {
-	padding: 0.25em 0.5em;
+    padding: 0.25em 0.5em;
 }
 optgroup[label] {
-	font-style: normal;
-	font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
 }
 optgroup[label]::before {
-	padding-left: 0.25em;
+    padding-left: 0.25em;
 }
 optgroup > option {
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
-	padding-right: 0.5em;
-	font-weight: normal;
-	font-style: normal;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 0.5em;
+    font-weight: normal;
+    font-style: normal;
 }
 
 :disabled,
 :disabled:active,
 :disabled:hover,
 :disabled:focus {
-	outline: none;
-	background-color: var(--lmdcss-bg-medium);
-	color: var(--lmdcss-text-medium);
-	font-style: italic;
-	opacity: 0.8;
-	cursor: not-allowed;
+    outline: none;
+    background-color: var(--lmdcss-bg-medium);
+    color: var(--lmdcss-text-medium);
+    font-style: italic;
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+[hidden] {
+    display: none;
 }

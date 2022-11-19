@@ -20,7 +20,7 @@ The defaults are my own preferences.
 ```css
 :root {
     --lmdcss-font-serif: Cambria, Times, "Times New Roman", serif;
-    --lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; 
+    --lmdcss-font-sans-serif: Segoe, 'Segoe UI', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
     --lmdcss-font-monospace: Consolas, monaco, 'Courier New', monospace;
     --lmdcss-font-size: 16px;
     --lmdcss-body-size: 1rem; /* default body text size */

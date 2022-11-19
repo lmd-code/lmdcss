@@ -5,15 +5,15 @@
 .gitkeep       export-ignore
 .nojekyll      export-ignore
 index.html     export-ignore
-docs           export-ignore
+/docs           export-ignore
 
 # Exclude from diffs
 CHANGELOG.md linguist-generated
 *.min.css    linguist-generated
 *.html       linguist-generated
-docs/*       linguist-generated
+/docs        linguist-generated
 
 # Exclude from stats
 *.md   linguist-vendored
 *.html linguist-vendored
-docs/* linguist-vendored
+/docs  linguist-vendored

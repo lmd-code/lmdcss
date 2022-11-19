@@ -1,14 +1,14 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [Unreleased]
+## [1.4.0] - 2022-11-19
 
 ### Changed
 
 - Default `line-height` is now `1.5`.
+
+### Added
+
+- Explicit declaration of rule `display: none` for elements with `hidden` attribute.
 
 ## [1.3.0] - 2022-10-28
 
@@ -31,9 +31,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [1.2.0] - 2022-10-09
 
-### Fixed
+### Changed
 
-- Removed top margin from first element after `legend` (`:nth-child(2)`) inside a `fieldset`.
+- Modified `pre` tag styling to plain `<pre>` and `<pre><code>` versions.
+- Modified `img` tag to have basic responsiveness.
+- Changed cursor type for various form elements (now uses 'default').
+- Created new demo page.
 
 ### Added
 
@@ -43,12 +46,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Added `details` styles for newer browsers only.
 - Added styles for `blockquote` inside `figure` with citation in `figcaption`.
 
-### Changed
+### Fixed
 
-- Modified `pre` tag styling to plain `<pre>` and `<pre><code>` versions.
-- Modified `img` tag to have basic responsiveness.
-- Changed cursor type for various form elements (now uses 'default').
-- Created new demo page.
+- Removed top margin from first element after `legend` (`:nth-child(2)`) inside a `fieldset`.
 
 ## [1.1.2] - 2022-10-08
 
@@ -64,14 +64,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [1.1.0] - 2022-09-27
 
+### Changed
+
+- Updated README instructions.
+
 ### Added
 
 - Added `<iframe><embed><object>` styles.
 - Added minified version.
-
-### Changed
-
-- Updated README instructions.
 
 ## 1.0.0 - 2022-09-15
 
@@ -90,13 +90,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## 0.2.0 - 2022-06-24
 
-### Added
-
-- Added `<table>` styles.
-
 ### Changed
 
 - Renamed CSS `--var` name prefix.
+
+### Added
+
+- Added `<table>` styles.
 
 ### Fixed
 
@@ -108,7 +108,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - First public release.
 
-[Unreleased]: https://github.com/lmd-code/lmdcss/compare/v1.3.0...HEAD
+[1.4.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.4.0
 [1.3.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.3.0
 [1.2.2]: https://github.com/lmd-code/lmdcss/releases/tag/v1.2.2
 [1.2.1]: https://github.com/lmd-code/lmdcss/releases/tag/v1.2.1
