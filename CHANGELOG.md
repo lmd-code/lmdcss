@@ -4,11 +4,11 @@
 
 ### Changed
 
-- Default `line-height` is now `1.5`.
+- Changed default `line-height` is now `1.5`.
 
 ### Added
 
-- Explicit declaration of rule `display: none` for elements with `hidden` attribute.
+- Added explicit declaration of rule `display: none` for elements with the `hidden` attribute.
 
 ## [1.3.0] - 2022-10-28
 
@@ -24,19 +24,21 @@
 
 ## [1.2.1] - 2022-10-10
 
-### Fixed
+### Removed
 
 - Removed "fallback" class requirement from `meter`.
-- Added `overflow:hidden` to `svg` for compatibility with older browsers.
+
+### Fixed
+
+- Fixed `svg` display in older browsers (overflow is now hidden).
 
 ## [1.2.0] - 2022-10-09
 
 ### Changed
 
-- Modified `pre` tag styling to plain `<pre>` and `<pre><code>` versions.
-- Modified `img` tag to have basic responsiveness.
+- Changed `pre` tag styling to plain `<pre>` and `<pre><code>` versions.
+- Changed `img` tag to have basic responsiveness.
 - Changed cursor type for various form elements (now uses 'default').
-- Created new demo page.
 
 ### Added
 
@@ -48,65 +50,30 @@
 
 ### Fixed
 
-- Removed top margin from first element after `legend` (`:nth-child(2)`) inside a `fieldset`.
+- Fixed unwanted top margin on first element after `legend`.
 
 ## [1.1.2] - 2022-10-08
 
 ### Fixed
 
-- Typo in `figure img` style declaration.
+- Fixed typo in `figure img` style declaration.
 
 ## [1.1.1] - 2022-10-05
 
 ### Fixed
 
-- Flexbox `min-width: auto` and `<pre>` tag overflow bug.
+- Fixed flexbox `min-width: auto` and `<pre>` tag overflow bug.
 
 ## [1.1.0] - 2022-09-27
-
-### Changed
-
-- Updated README instructions.
 
 ### Added
 
 - Added `<iframe><embed><object>` styles.
 - Added minified version.
 
-## 1.0.0 - 2022-09-15
+## [1.0.0] - 2022-09-15
 
-### Changed
-
-- Renamed library to 'lmdcss' (final name!) for consistency with other lmd-code projects.
-- Renamed CSS `--var` name prefix to reflect new/final library name.
-- Updated README instructions.
-
-## 0.3.0 - 2022-09-04
-
-### Changed
-
-- Renamed library to 'modcss'.
-- Renamed CSS `--var` name prefix to reflect new library name.
-
-## 0.2.0 - 2022-06-24
-
-### Changed
-
-- Renamed CSS `--var` name prefix.
-
-### Added
-
-- Added `<table>` styles.
-
-### Fixed
-
-- Incorrect semantic versioning.
-
-## 0.1.0 - 2022-06-22
-
-### Added
-
-- First public release.
+*First release under the name 'lmdcss'*
 
 [1.4.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.4.0
 [1.3.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.3.0
@@ -116,3 +83,4 @@
 [1.1.2]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.2
 [1.1.1]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.1
 [1.1.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.1.0
+[1.0.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.0.0
