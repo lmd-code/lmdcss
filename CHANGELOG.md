@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.1] - 2022-11-25
+
+### Fixed
+
+- Fixed gapping after `textarea` box, caused by it being an `inline-block` element.
+
 ## [1.4.0] - 2022-11-19
 
 ### Changed
@@ -75,6 +81,7 @@
 
 *First release under the name 'lmdcss'*
 
+[1.4.1]: https://github.com/lmd-code/lmdcss/releases/tag/v1.4.1
 [1.4.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.4.0
 [1.3.0]: https://github.com/lmd-code/lmdcss/releases/tag/v1.3.0
 [1.2.2]: https://github.com/lmd-code/lmdcss/releases/tag/v1.2.2
