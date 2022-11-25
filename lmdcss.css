@@ -555,6 +555,7 @@ textarea {
     font-size: 1em;
     font-weight: var(--lmdcss-font-weight);
     resize: vertical;
+    vertical-align: top; /* Removes weird gap after box */
 }
 
 /* <select> */
